@@ -1,0 +1,44 @@
+# Dependencias
+/node_modules
+
+# Build
+/build
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Directorios del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+.env
+.env.*.local
+
+# Archivos de configuración de herramientas
+.vscode
+.idea
+
+# Cache de herramientas
+.cache
+.next
+out
+
+# Archivos de testing
+coverage
+
+# Archivos temporales
+*.local
+*.swp
+*.zip
+
+# Archivos de configuración generados
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Archivos relacionados con EmailJS u otras claves API
+EMAILJS_SETUP.md

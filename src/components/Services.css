@@ -1,0 +1,146 @@
+.services {
+  background: #0a0a0a;
+}
+
+/* Light theme services */
+body.light-theme .services {
+  background: #f8f9fa;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Light theme subtitle */
+body.light-theme .section-subtitle {
+  color: #6c757d;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.service-card {
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #404040 0%, #606060 100%);
+}
+
+/* Light theme service card top border */
+body.light-theme .service-card::before {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Light theme service title */
+body.light-theme .service-title {
+  color: #2c3e50;
+}
+
+.service-description {
+  color: #b0b0b0;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Light theme service description */
+body.light-theme .service-description {
+  color: #6c757d;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+}
+
+/* Light theme service features */
+body.light-theme .service-features li {
+  color: #495057;
+}
+
+.feature-check {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.services-cta {
+  text-align: center;
+  background: #1a1a1a;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 1px solid #333;
+}
+
+/* Light theme services CTA */
+body.light-theme .services-cta {
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+}
+
+.services-cta p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+/* Light theme services CTA text */
+body.light-theme .services-cta p {
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    text-align: center;
+  }
+  
+  .services-cta {
+    padding: 2rem;
+  }
+} 
