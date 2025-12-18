@@ -1,126 +1,94 @@
-# Detective Privado - Landing Page
+# SD INVESTIGACIONES - Detectives Privados
 
-Una landing page moderna y profesional para servicios de detective privado, construida con React.
+Sitio web profesional para SD INVESTIGACIONES, agencia de detectives privados en Tenerife. Desarrollado con SolidJS para máxima optimización SEO y rendimiento.
 
-## Características
+## 🚀 Características
 
-- 🎨 Diseño moderno y responsive
-- 📱 Optimizada para móviles
-- ⚡ Navegación suave entre secciones
-- 📝 Formulario de contacto funcional
-- 🔍 Sección de servicios detallada
-- 📊 Estadísticas y información de la empresa
-- 🎯 Call-to-actions estratégicos
+- **SolidJS**: Framework moderno con rendimiento superior
+- **SEO Optimizado**: Meta tags, structured data, y navegación semántica
+- **Multiidioma**: Soporte para Español, Inglés y Alemán
+- **Diseño Responsivo**: Optimizado para todos los dispositivos
+- **Modo Oscuro/Claro**: Tema personalizable
+- **Navegación SPA**: Rutas optimizadas para SEO
+- **Accesibilidad**: Cumple con estándares WCAG
 
-## Secciones Incluidas
-
-1. **Header** - Navegación fija con menú responsive
-2. **Hero** - Sección principal con llamada a la acción
-3. **Servicios** - 6 servicios principales del detective
-4. **Sobre Nosotros** - Información de la empresa y estadísticas
-5. **Contacto** - Formulario de contacto e información
-6. **Footer** - Enlaces y información adicional
-
-## Servicios Mostrados
-
-- 🔍 Investigación de Infidelidad
-- 👥 Investigación de Personas
-- 🏢 Investigación Empresarial
-- 💰 Investigación Financiera
-- 📱 Investigación Digital
-- 🚗 Vigilancia y Seguimiento
-
-## Instalación y Ejecución
-
-### Prerrequisitos
-
-- Node.js (versión 14 o superior)
-- npm o yarn
-
-### Pasos para ejecutar
-
-1. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
-
-2. **Ejecutar en modo desarrollo:**
-   ```bash
-   npm start
-   ```
-
-3. **Abrir en el navegador:**
-   La aplicación se abrirá automáticamente en `http://localhost:3000`
-
-### Construir para producción
-
-```bash
-npm run build
-```
-
-## Tecnologías Utilizadas
-
-- **React 18** - Framework principal
-- **CSS3** - Estilos modernos con gradientes y animaciones
-- **JavaScript ES6+** - Funcionalidad interactiva
-- **Responsive Design** - Adaptable a todos los dispositivos
-
-## Personalización
-
-### Cambiar Información de Contacto
-
-Edita el archivo `src/components/Contact.js` para modificar:
-- Números de teléfono
-- Direcciones de email
-- Dirección física
-- Horarios de atención
-
-### Modificar Servicios
-
-Edita el array `services` en `src/components/Services.js` para:
-- Agregar nuevos servicios
-- Cambiar descripciones
-- Modificar iconos
-
-### Cambiar Colores
-
-Los colores principales se definen en:
-- `src/index.css` - Variables globales
-- `src/components/*.css` - Estilos específicos
-
-## Estructura del Proyecto
+## 📁 Estructura del Proyecto
 
 ```
 src/
-├── components/
-│   ├── Header.js          # Navegación principal
-│   ├── Hero.js           # Sección de bienvenida
-│   ├── Services.js       # Lista de servicios
-│   ├── About.js          # Información de la empresa
-│   ├── Contact.js        # Formulario de contacto
-│   ├── Footer.js         # Pie de página
-│   └── *.css            # Estilos de cada componente
-├── App.js               # Componente principal
-├── index.js             # Punto de entrada
-└── *.css               # Estilos globales
+├── components/          # Componentes reutilizables
+│   ├── Header/         # Navegación principal
+│   ├── Hero/           # Sección hero
+│   ├── Services/       # Servicios
+│   ├── About/          # Sobre nosotros
+│   ├── Contact/        # Formulario de contacto
+│   ├── Footer/         # Pie de página
+│   ├── WhatsAppButton/ # Botón de WhatsApp
+│   └── Layout/         # Layout principal
+├── pages/              # Páginas de la aplicación
+│   ├── Home.jsx        # Página principal
+│   ├── Services.jsx    # Página de servicios
+│   ├── About.jsx       # Página sobre nosotros
+│   └── Contact.jsx     # Página de contacto
+├── context/            # Contexto de la aplicación
+├── translations/       # Traducciones
+└── index.css          # Estilos globales
 ```
 
-## Características Técnicas
+## 🛠️ Tecnologías
 
-- **Navegación Suave** - Scroll automático entre secciones
-- **Formulario Funcional** - Validación y manejo de estado
-- **Diseño Responsive** - Adaptable a móviles, tablets y desktop
-- **Animaciones CSS** - Efectos hover y transiciones
-- **SEO Optimizado** - Meta tags y estructura semántica
+- **SolidJS**: Framework principal
+- **Vite**: Build tool y dev server
+- **Solid Router**: Navegación SPA
+- **Solid Meta**: Gestión de meta tags
+- **CSS Modules**: Estilos modulares
 
-## Licencia
+## 🚀 Instalación
 
-Este proyecto está bajo la Licencia MIT. Puedes usarlo libremente para proyectos comerciales y personales.
+```bash
+# Instalar dependencias
+npm install
 
----
+# Desarrollo
+npm run dev
 
-**Nota:** Esta es una aplicación de demostración. Para uso en producción, asegúrate de:
-- Configurar un backend para el formulario de contacto
-- Agregar análisis web (Google Analytics)
-- Optimizar imágenes y recursos
-- Configurar SSL/HTTPS 
+# Build para producción
+npm run build
+
+# Preview del build
+npm run preview
+```
+
+## 📱 Características SEO
+
+- **Meta tags dinámicos**: Títulos y descripciones optimizados por página
+- **Structured Data**: Schema.org markup para mejor indexación
+- **Open Graph**: Optimización para redes sociales
+- **Canonical URLs**: Prevención de contenido duplicado
+- **Sitemap**: Generación automática de sitemap
+- **Performance**: Carga rápida y Core Web Vitals optimizados
+
+## 🌐 Multiidioma
+
+El sitio soporta tres idiomas:
+- **Español** (por defecto)
+- **Inglés**
+- **Alemán**
+
+Las traducciones se gestionan a través del sistema de contexto de SolidJS.
+
+## 🎨 Temas
+
+- **Modo Oscuro**: Tema por defecto
+- **Modo Claro**: Alternativa más clara
+- **Persistencia**: Preferencias guardadas en localStorage
+
+## 📞 Contacto
+
+- **Teléfono**: 643697615
+- **Email**: sdinvestigaciones@gmail.com
+- **Ubicación**: Candelaria, 38530, Santa Cruz De Tenerife, Spain
+
+## 📄 Licencia
+
+Todos los derechos reservados - SD INVESTIGACIONES 2024 

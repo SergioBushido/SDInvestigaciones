@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="#ffffff">
+  <!-- Owl Silhouette -->
+  <path d="M20 40 Q20 25 30 20 Q40 15 50 20 Q60 15 70 20 Q80 25 80 40 Q80 55 70 60 Q60 65 50 60 Q40 65 30 60 Q20 55 20 40 Z" fill="#1a1a1a"/>
+  <path d="M25 35 Q25 30 30 28 Q35 26 40 28 Q45 26 50 28 Q55 26 60 28 Q65 30 65 35 Q65 40 60 42 Q55 44 50 42 Q45 44 40 42 Q35 44 30 42 Q25 40 25 35 Z" fill="#ffffff"/>
+  <circle cx="35" cy="32" r="2" fill="#1a1a1a"/>
+  <circle cx="55" cy="32" r="2" fill="#1a1a1a"/>
+  <path d="M45 38 Q45 36 47 35 Q49 34 50 35 Q51 34 53 35 Q55 36 55 38" stroke="#1a1a1a" stroke-width="1" fill="none"/>
+  
+  <!-- SD Text -->
+  <text x="90" y="35" font-family="serif" font-size="24" font-weight="bold" fill="#1a1a1a">SD</text>
+  
+  <!-- INVESTIGACIONES Text -->
+  <text x="90" y="55" font-family="serif" font-size="12" font-weight="bold" fill="#1a1a1a">INVESTIGACIONES</text>
+</svg> 

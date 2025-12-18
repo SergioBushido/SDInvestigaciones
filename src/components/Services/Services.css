@@ -1,0 +1,141 @@
+.services {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.light-theme .services {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+body.light-theme .section-title {
+  color: #333;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+body.light-theme .service-card {
+  background: white;
+  border: 1px solid #e1e5e9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme .service-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+body.light-theme .service-title {
+  color: #333;
+}
+
+.service-description {
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+}
+
+.service-features li {
+  padding: 0.5rem 0;
+  opacity: 0.9;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.services-cta {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.light-theme .services-cta {
+  background: white;
+  border: 1px solid #e1e5e9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+} 
