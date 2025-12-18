@@ -28,10 +28,19 @@ const Contact = () => {
     setSubmitMessage('');
 
     try {
-      // Simulación de envío
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const response = await fetch('https://hook.eu2.make.com/1w9cu5f8i2jum4pa125j3a1e6qiix3iv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData())
+      });
 
-      setSubmitMessage(t.contact.form.successMessage);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      setSubmitMessage(t().contact.form.successMessage);
       setFormData({
         nombre: '',
         email: '',
@@ -40,7 +49,8 @@ const Contact = () => {
         mensaje: ''
       });
     } catch (err) {
-      setSubmitMessage(t.contact.form.errorMessage || "Ocurrió un error.");
+      console.error('Error submitting form:', err);
+      setSubmitMessage(t().contact.form.errorMessage || "Ocurrió un error al enviar el formulario.");
     } finally {
       setIsSubmitting(false);
     }
