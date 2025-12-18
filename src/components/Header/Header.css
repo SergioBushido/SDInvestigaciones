@@ -157,6 +157,12 @@
 }
 
 @media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
   .nav {
     position: absolute;
     top: 100%;
@@ -185,9 +191,13 @@
 
   .header-controls {
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    order: 3;
   }
   
   .hamburger {
     display: flex;
+    order: 2;
   }
 } 
