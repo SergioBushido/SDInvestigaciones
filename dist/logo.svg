@@ -1,14 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="#ffffff">
-  <!-- Owl Silhouette -->
-  <path d="M20 40 Q20 25 30 20 Q40 15 50 20 Q60 15 70 20 Q80 25 80 40 Q80 55 70 60 Q60 65 50 60 Q40 65 30 60 Q20 55 20 40 Z" fill="#1a1a1a"/>
-  <path d="M25 35 Q25 30 30 28 Q35 26 40 28 Q45 26 50 28 Q55 26 60 28 Q65 30 65 35 Q65 40 60 42 Q55 44 50 42 Q45 44 40 42 Q35 44 30 42 Q25 40 25 35 Z" fill="#ffffff"/>
-  <circle cx="35" cy="32" r="2" fill="#1a1a1a"/>
-  <circle cx="55" cy="32" r="2" fill="#1a1a1a"/>
-  <path d="M45 38 Q45 36 47 35 Q49 34 50 35 Q51 34 53 35 Q55 36 55 38" stroke="#1a1a1a" stroke-width="1" fill="none"/>
-  
-  <!-- SD Text -->
-  <text x="90" y="35" font-family="serif" font-size="24" font-weight="bold" fill="#1a1a1a">SD</text>
-  
-  <!-- INVESTIGACIONES Text -->
-  <text x="90" y="55" font-family="serif" font-size="12" font-weight="bold" fill="#1a1a1a">INVESTIGACIONES</text>
-</svg> 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-labelledby="title desc">
+  <title id="title">SD INVESTIGACIONES - Detectives Privados</title>
+  <desc id="desc">Logotipo de SD INVESTIGACIONES con silueta de detective y una lupa.</desc>
+
+  <!-- Fondo circular -->
+  <defs>
+    <linearGradient id="badgeGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="40" cy="40" r="32" fill="url(#badgeGradient)" />
+  <circle cx="40" cy="40" r="31" fill="none" stroke="#facc15" stroke-width="2" />
+
+  <!-- Silueta detective -->
+  <!-- Sombrero -->
+  <path d="M26 32h28c-1.5-4.5-5.5-9-14-9s-12.5 4.5-14 9z" fill="#0f172a" />
+  <rect x="28" y="29" width="24" height="3" fill="#020617" />
+
+  <!-- Cabeza -->
+  <circle cx="40" cy="40" r="9" fill="#020617" />
+
+  <!-- Cuello / gabardina -->
+  <path d="M28 52l6-10h12l6 10z" fill="#020617" />
+  <path d="M28 52l12-6 12 6" fill="none" stroke="#1f2937" stroke-width="2" />
+
+  <!-- Lupa -->
+  <circle cx="56" cy="54" r="7" fill="none" stroke="#e5e7eb" stroke-width="2" />
+  <line x1="60" y1="58" x2="66" y2="64" stroke="#e5e7eb" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Brillo dentro de la lupa -->
+  <path d="M52 50a4 4 0 0 1 6-1" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Texto SD INVESTIGACIONES -->
+  <text x="90" y="36" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#0f172a" letter-spacing="1">
+    SD
+    <tspan dx="6" font-size="14" font-weight="600" fill="#4b5563">INVESTIGACIONES</tspan>
+  </text>
+
+  <!-- Claim -->
+  <text x="90" y="54" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#6b7280">
+    Detectives privados &bull; Tenerife
+  </text>
+</svg>

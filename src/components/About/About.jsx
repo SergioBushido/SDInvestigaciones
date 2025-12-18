@@ -1,3 +1,4 @@
+import { For } from 'solid-js';
 import { useAppContext } from '../../context/AppContext';
 import { translations } from '../../translations/translations';
 import './About.css';
@@ -24,30 +25,36 @@ const About = () => {
             <h3 class="section-subtitle">{t().about.subtitle}</h3>
 
             {/* Descripción principal */}
-            {t().about.description.map((paragraph, index) => (
-              <p class="about-description" key={index}>
-                {paragraph}
-              </p>
-            ))}
+            <For each={t().about.description}>
+              {(paragraph) => (
+                <p class="about-description">
+                  {paragraph}
+                </p>
+              )}
+            </For>
 
             {/* Valores */}
             <div class="values-grid">
-              {t().about.values.map((value, index) => (
-                <div class="value-card" key={index}>
-                  <h4 class="value-title">{value.title}</h4>
-                  <p class="value-description">{value.description}</p>
-                </div>
-              ))}
+              <For each={t().about.values}>
+                {(value) => (
+                  <div class="value-card">
+                    <h4 class="value-title">{value.title}</h4>
+                    <p class="value-description">{value.description}</p>
+                  </div>
+                )}
+              </For>
             </div>
 
             {/* Estadísticas */}
             <div class="stats-grid">
-              {t().about.stats.map((stat, index) => (
-                <div class="stat-card" key={index}>
-                  <div class="stat-number">{stat.number}</div>
-                  <div class="stat-label">{stat.label}</div>
-                </div>
-              ))}
+              <For each={t().about.stats}>
+                {(stat) => (
+                  <div class="stat-card">
+                    <div class="stat-number">{stat.number}</div>
+                    <div class="stat-label">{stat.label}</div>
+                  </div>
+                )}
+              </For>
             </div>
 
             {/* Llamada a la acción */}

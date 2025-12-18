@@ -1,3 +1,4 @@
+import { For } from "solid-js";
 import { useAppContext } from '../../context/AppContext';
 import { translations } from '../../translations/translations';
 import { useNavigate, useLocation } from '@solidjs/router';
@@ -73,8 +74,8 @@ const Header = (props) => {
       <div class="container">
         <div class="header-content">
           <div class="logo">
-            <img src="/logo.svg" alt="SD INVESTIGACIONES" class="logo-image" />
-            <h2>SD INVESTIGACIONES</h2>
+            <img src="/logo.webp" alt="SD INVESTIGACIONES" class="logo-image" />
+            <h2>SDinvestigaciones</h2>
           </div>
 
           <nav class={`nav ${props.isMenuOpen ? 'nav-open' : ''}`}>
@@ -89,7 +90,7 @@ const Header = (props) => {
           <div class="header-controls">
             {/* Selector de idioma con banderas */}
             <div class="language-flags" aria-label="Seleccionar idioma">
-              {languages.map((lang) => (
+              <For each={languages}>{(lang) => (
                 <button
                   type="button"
                   class={`flag-btn ${language() === lang.code ? 'active' : ''}`}
@@ -99,7 +100,7 @@ const Header = (props) => {
                   {flags[lang.code]}
                   <span class="sr-only">{lang.label}</span>
                 </button>
-              ))}
+              )}</For>
             </div>
 
             <button class="theme-toggle" onClick={toggleTheme}>
@@ -111,7 +112,7 @@ const Header = (props) => {
             class={`hamburger ${props.isMenuOpen ? 'active' : ''}`}
             onClick={() => props.setIsMenuOpen?.(!props.isMenuOpen)}
           >
-            <span></span><span></span><span></span>
+            <span /><span /><span />
           </div>
         </div>
       </div>

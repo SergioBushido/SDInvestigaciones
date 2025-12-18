@@ -1,4 +1,4 @@
-import { createSignal } from 'solid-js';
+import { createSignal, For } from 'solid-js';
 import { useAppContext } from '../../context/AppContext';
 import { translations } from '../../translations/translations';
 import './Contact.css';
@@ -86,7 +86,7 @@ const Contact = () => {
             <h3>{t().contact.form.title}</h3>
             <form onSubmit={handleSubmit}>
               <div class="form-group">
-                <label htmlFor="nombre">{t().contact.form.fields.nombre}</label>
+                <label for="nombre">{t().contact.form.fields.nombre}</label>
                 <input
                   type="text"
                   id="nombre"
@@ -97,7 +97,7 @@ const Contact = () => {
               </div>
 
               <div class="form-group">
-                <label htmlFor="email">{t().contact.form.fields.email}</label>
+                <label for="email">{t().contact.form.fields.email}</label>
                 <input
                   type="email"
                   id="email"
@@ -108,7 +108,7 @@ const Contact = () => {
               </div>
 
               <div class="form-group">
-                <label htmlFor="telefono">{t().contact.form.fields.telefono}</label>
+                <label for="telefono">{t().contact.form.fields.telefono}</label>
                 <input
                   type="tel"
                   id="telefono"
@@ -119,7 +119,7 @@ const Contact = () => {
               </div>
 
               <div class="form-group">
-                <label htmlFor="servicio">{t().contact.form.fields.servicio}</label>
+                <label for="servicio">{t().contact.form.fields.servicio}</label>
                 <select
                   id="servicio"
                   value={formData().servicio}
@@ -127,21 +127,21 @@ const Contact = () => {
                   required
                 >
                   <option value="">{t().contact.form.fields.servicio}</option>
-                  {t().contact.form.services.map((service, index) => (
-                    <option key={index} value={service}>{service}</option>
-                  ))}
+                  <For each={t().contact.form.services}>
+                    {(service) => <option value={service}>{service}</option>}
+                  </For>
                 </select>
               </div>
 
               <div class="form-group">
-                <label htmlFor="mensaje">{t().contact.form.fields.mensaje}</label>
+                <label for="mensaje">{t().contact.form.fields.mensaje}</label>
                 <textarea
                   id="mensaje"
                   rows="5"
                   value={formData().mensaje}
                   onInput={(e) => handleInputChange('mensaje', e.target.value)}
                   required
-                ></textarea>
+                 />
               </div>
 
               <button type="submit" class="btn btn-primary" disabled={isSubmitting()}>

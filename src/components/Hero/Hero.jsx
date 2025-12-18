@@ -15,7 +15,22 @@ const Hero = () => {
 
   return (
     <section id="inicio" class="hero">
-      <div class="hero-background"></div>
+      <div class="hero-underlay"></div>
+      <img 
+        src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1920&q=20&fm=avif" 
+        srcset="
+          https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=480&q=20&fm=avif 480w,
+          https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=640&q=20&fm=avif 640w,
+          https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1024&q=20&fm=avif 1024w,
+          https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1920&q=20&fm=avif 1920w
+        "
+        sizes="100vw"
+        alt="Hero Background" 
+        class="hero-bg-image" 
+        fetchpriority="high"
+        width="1920"
+        height="1080"
+      />
       <div class="container">
         <div class="hero-content">
           {/* Título principal con resaltado */}

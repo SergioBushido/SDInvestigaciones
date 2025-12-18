@@ -1,3 +1,4 @@
+import { For } from 'solid-js';
 import { useAppContext } from '../../context/AppContext';
 import { translations } from '../../translations/translations';
 import './Services.css';
@@ -26,20 +27,22 @@ const Services = () => {
         </div>
 
         <div class="services-grid">
-          {t().services.items.map((service, index) => (
-            <div class="service-card" key={index}>
-              <div class="service-icon">
-                {icons[index % icons.length]}
+          <For each={t().services.items}>
+            {(service, index) => (
+              <div class="service-card">
+                <div class="service-icon">
+                  {icons[index() % icons.length]}
+                </div>
+                <h3 class="service-title">{service.title}</h3>
+                <p class="service-description">{service.description}</p>
+                <ul class="service-features">
+                  <For each={service.features}>
+                    {(feature) => <li>{feature}</li>}
+                  </For>
+                </ul>
               </div>
-              <h3 class="service-title">{service.title}</h3>
-              <p class="service-description">{service.description}</p>
-              <ul class="service-features">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex}>{feature}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            )}
+          </For>
         </div>
 
         <div class="services-cta">

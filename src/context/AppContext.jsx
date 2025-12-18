@@ -1,4 +1,4 @@
-import { createContext, createSignal, createEffect, useContext, onCleanup } from 'solid-js';
+import { createContext, createSignal, createEffect, useContext } from 'solid-js';
 import { translations } from '../translations/translations';
 
 const AppContext = createContext();
