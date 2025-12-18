@@ -64,7 +64,7 @@ export const translations = {
       title: 'Sobre Nosotros',
       subtitle: 'Experiencia y Profesionalismo',
       description: [
-        'Con más de 15 años de experiencia en el sector de la investigación privada, SD INVESTIGACIONES se ha convertido en una referencia de confianza y profesionalismo en Tenerife.',
+        'Con más de 5 años de experiencia en el sector de la investigación privada, SD INVESTIGACIONES se ha convertido en una referencia de confianza y profesionalismo en Tenerife.',
         'Nuestro equipo de detectives privados está formado por profesionales altamente cualificados, con amplia experiencia en diversos tipos de investigaciones y un compromiso inquebrantable con la confidencialidad y la ética profesional.'
       ],
       values: [
@@ -86,8 +86,8 @@ export const translations = {
         }
       ],
       stats: [
-        { number: '500+', label: 'Casos Resueltos' },
-        { number: '15+', label: 'Años de Experiencia' },
+        { number: '100+', label: 'Casos Resueltos' },
+        { number: '5+', label: 'Años de Experiencia' },
         { number: '98%', label: 'Tasa de Éxito' },
         { number: '24/7', label: 'Disponibilidad' }
       ],
