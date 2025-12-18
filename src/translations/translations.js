@@ -7,9 +7,9 @@ export const translations = {
       contacto: 'Contacto'
     },
     hero: {
-      title: 'Detectives Privados',
-      titleHighlight: 'Profesionales',
-      subtitle: 'Servicios de investigación privada confidenciales y profesionales. Resolvemos casos complejos con discreción y eficacia.',
+      title: 'Agencia de Detectives Privados en Tenerife',
+      titleHighlight: 'SD Investigaciones',
+      subtitle: 'Especialistas en investigaciones familiares, laborales y mercantiles',
       features: {
         confidencial: '100% Confidencial',
         rapidos: 'Resultados Rápidos',
@@ -102,7 +102,14 @@ export const translations = {
       subtitle: 'Estamos aquí para ayudarte. Contáctanos para una consulta gratuita y confidencial.',
       info: {
         title: 'Información de Contacto',
-        description: 'Puedes contactarnos a través de cualquiera de estos medios. Estamos disponibles 24/7 para casos urgentes.'
+        description: 'Puedes contactarnos a través de cualquiera de estos medios. Estamos disponibles 24/7 para casos urgentes.',
+        details: {
+          phone: 'Teléfono',
+          email: 'Email',
+          address: 'Dirección',
+          hours: 'Horario',
+          hoursValue: 'Lun-Vie: 9:00-18:00'
+        }
       },
       form: {
         title: 'Envíanos tu Consulta',
@@ -131,8 +138,16 @@ export const translations = {
       tooltip: '¡Chatea con nosotros!',
       message: 'Hola, me gustaría obtener más información sobre sus servicios de detective privado.'
     },
+    seo: {
+      home: {
+        title: 'SD Investigaciones | Detectives Privados en Tenerife | TIP 6091 & RNSP 11582',
+        description: 'Detectives privados profesionales en Tenerife. Servicios de investigación confidenciales: infidelidad, personas, empresarial, financiera. Consulta gratuita 24/7.'
+      }
+    },
     footer: {
       description: 'SD INVESTIGACIONES - Detectives privados profesionales en Tenerife. Servicios confidenciales y resultados garantizados.',
+      licenseInfo: 'SD INVESTIGACIONES Agencia de Detectives Privados en Tenerife. Habilitada por el Ministerio del Interior.',
+      validity: 'Informes con plena validez judicial.',
       social: {
         whatsapp: 'WhatsApp',
         email: 'Email',
@@ -158,9 +173,9 @@ export const translations = {
       contacto: 'Contact'
     },
     hero: {
-      title: 'Private Detectives',
-      titleHighlight: 'Professionals',
-      subtitle: 'Confidential and professional private investigation services. We solve complex cases with discretion and efficiency.',
+      title: 'Private Detective Agency in Tenerife',
+      titleHighlight: 'SD Investigations',
+      subtitle: 'Specialists in family, corporate, and financial investigations',
       features: {
         confidencial: '100% Confidential',
         rapidos: 'Quick Results',
@@ -253,7 +268,14 @@ export const translations = {
       subtitle: 'We are here to help you. Contact us for a free and confidential consultation.',
       info: {
         title: 'Contact Information',
-        description: 'You can contact us through any of these means. We are available 24/7 for urgent cases.'
+        description: 'You can contact us through any of these means. We are available 24/7 for urgent cases.',
+        details: {
+          phone: 'Phone',
+          email: 'Email',
+          address: 'Address',
+          hours: 'Hours',
+          hoursValue: 'Mon-Fri: 9:00-18:00'
+        }
       },
       form: {
         title: 'Send us your Inquiry',
@@ -282,8 +304,16 @@ export const translations = {
       tooltip: 'Chat with us!',
       message: 'Hello, I would like to get more information about your private detective services.'
     },
+    seo: {
+      home: {
+        title: 'SD Investigations | Private Detectives in Tenerife | TIP 6091 & RNSP 11582',
+        description: 'Professional private detectives in Tenerife. Confidential investigation services: infidelity, people, corporate, financial. Free consultation 24/7.'
+      }
+    },
     footer: {
       description: 'SD INVESTIGACIONES - Professional private detectives in Tenerife. Confidential services and guaranteed results.',
+      licenseInfo: 'SD INVESTIGACIONES Private Detective Agency in Tenerife. Licensed by the Ministry of the Interior.',
+      validity: 'Reports with full judicial validity.',
       social: {
         whatsapp: 'WhatsApp',
         email: 'Email',
@@ -309,9 +339,9 @@ export const translations = {
       contacto: 'Kontakt'
     },
     hero: {
-      title: 'Privatermittler',
-      titleHighlight: 'Professionals',
-      subtitle: 'Vertrauliche und professionelle Privatermittlungsdienste. Wir lösen komplexe Fälle mit Diskretion und Effizienz.',
+      title: 'Privatdetektei auf Teneriffa',
+      titleHighlight: 'SD Ermittlungen',
+      subtitle: 'Spezialisten für Familien-, Arbeits- und Wirtschaftsermittlungen',
       features: {
         confidencial: '100% Vertraulich',
         rapidos: 'Schnelle Ergebnisse',
@@ -319,7 +349,7 @@ export const translations = {
       },
       buttons: {
         consulta: 'Kostenlose Beratung',
-        servicios: 'Dienstleistungen anzeigen'
+        servicios: 'Dienstleistungen ansehen'
       }
     },
     services: {
@@ -404,7 +434,14 @@ export const translations = {
       subtitle: 'Wir sind hier, um Ihnen zu helfen. Kontaktieren Sie uns für eine kostenlose und vertrauliche Beratung.',
       info: {
         title: 'Kontaktinformationen',
-        description: 'Sie können uns über jeden dieser Wege kontaktieren. Wir sind 24/7 für dringende Fälle verfügbar.'
+        description: 'Sie können uns über jeden dieser Wege kontaktieren. Wir sind 24/7 für dringende Fälle verfügbar.',
+        details: {
+          phone: 'Telefon',
+          email: 'E-Mail',
+          address: 'Adresse',
+          hours: 'Öffnungszeiten',
+          hoursValue: 'Mo-Fr: 9:00-18:00'
+        }
       },
       form: {
         title: 'Senden Sie uns Ihre Anfrage',
@@ -433,8 +470,16 @@ export const translations = {
       tooltip: 'Chatten Sie mit uns!',
       message: 'Hallo, ich würde gerne mehr Informationen über Ihre privaten Detektivdienste erhalten.'
     },
+    seo: {
+      home: {
+        title: 'SD Ermittlungen | Privatdetektive auf Teneriffa | TIP 6091 & RNSP 11582',
+        description: 'Professionelle Privatdetektive auf Teneriffa. Vertrauliche Ermittlungsdienste: Untreue, Personen, Unternehmen, Finanzen. Kostenlose Beratung 24/7.'
+      }
+    },
     footer: {
       description: 'SD INVESTIGACIONES - Professionelle Privatermittler auf Teneriffa. Vertrauliche Dienstleistungen und garantierte Ergebnisse.',
+      licenseInfo: 'SD INVESTIGACIONES Privatdetektei auf Teneriffa. Vom Innenministerium zugelassen.',
+      validity: 'Berichte mit voller gerichtlicher Gültigkeit.',
       social: {
         whatsapp: 'WhatsApp',
         email: 'E-Mail',

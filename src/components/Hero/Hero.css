@@ -31,46 +31,28 @@ body.light-theme div.hero-underlay {
   z-index: 0;
 }
 
-.hero-background {
-  /* Deprecated in favor of img tag */
-  display: none;
-}
-
 .hero-content {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  padding: 0 1rem;
 }
 
-.hero-title {
+.hero-content h1 {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
-.highlight {
-  background: linear-gradient(45deg, #ffffff, #cccccc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Light theme highlight */
-body.light-theme .highlight {
-  background: linear-gradient(45deg, #ffd700, #ffed4e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.hero-subtitle {
-  font-size: 1.3rem;
+.hero-content h2 {
+  font-size: 1.5rem;
   margin-bottom: 3rem;
-  opacity: 0.9;
+  opacity: 0.95;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .hero-features {
@@ -142,21 +124,31 @@ body.light-theme .btn-secondary:hover {
 }
 
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
+  .hero-content {
+    padding: 0 1.5rem;
   }
 
-  .hero-subtitle {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
     font-size: 1.1rem;
+    margin-bottom: 2rem;
   }
 
   .hero-features {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 
   .hero-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 }

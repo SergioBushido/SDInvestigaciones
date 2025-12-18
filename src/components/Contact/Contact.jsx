@@ -73,19 +73,19 @@ const Contact = () => {
               <div class="contact-details">
                 <div class="contact-item">
                   <span class="contact-icon">📞</span>
-                  <div><h4>Teléfono</h4><p>643697615</p></div>
+                  <div><h4>{t().contact.info.details.phone}</h4><p>643697615</p></div>
                 </div>
                 <div class="contact-item">
                   <span class="contact-icon">📧</span>
-                  <div><h4>Email</h4><p>sdinvestigaciones@gmail.com</p></div>
+                  <div><h4>{t().contact.info.details.email}</h4><p>sdinvestigaciones@gmail.com</p></div>
                 </div>
                 <div class="contact-item">
                   <span class="contact-icon">📍</span>
-                  <div><h4>Dirección</h4><p>Candelaria, 38530, Santa Cruz De Tenerife, Spain</p></div>
+                  <div><h4>{t().contact.info.details.address}</h4><p>Candelaria, 38530, Santa Cruz De Tenerife, Spain</p></div>
                 </div>
                 <div class="contact-item">
                   <span class="contact-icon">⏰</span>
-                  <div><h4>Horario</h4><p>Lun-Vie: 9:00-18:00</p></div>
+                  <div><h4>{t().contact.info.details.hours}</h4><p>{t().contact.info.details.hoursValue}</p></div>
                 </div>
               </div>
             </div>

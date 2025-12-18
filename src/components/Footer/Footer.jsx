@@ -36,7 +36,13 @@ const Footer = () => {
 
           <div class="footer-section">
             <h3>🔍 SD INVESTIGACIONES</h3>
-            <p>{t().footer.description}</p>
+            <p>
+              {t().footer.licenseInfo}
+              <br />
+              <strong>RNSP: 11.582 | TIP: 6.091</strong>
+              <br />
+              {t().footer.validity}
+            </p>
             <div class="social-links">
               <a href="#" class="social-link">📱 {t().footer.social.whatsapp}</a>
               <a href="#" class="social-link">📧 {t().footer.social.email}</a>
