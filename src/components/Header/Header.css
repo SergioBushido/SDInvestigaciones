@@ -6,7 +6,7 @@
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid #333;
 }
 
@@ -84,7 +84,7 @@
   width: 20px;
   height: 15px;
   border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .flag-btn:hover {
@@ -158,46 +158,82 @@
 
 @media (max-width: 768px) {
   .header-content {
-    flex-wrap: wrap;
-    align-items: flex-start;
+    /* Prevent wrapping so elements stay in one line */
+    flex-wrap: nowrap;
+    align-items: center;
+    /* Center vertically */
     gap: 0.5rem;
+    padding: 0.5rem 0;
+    /* Reduce padding slightly */
+  }
+
+  .logo {
+    margin-right: auto;
+    /* Push everything else to the right */
+  }
+
+  .logo h2 {
+    display: none;
+    /* Hide text on mobile to save space */
   }
 
   .nav {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    /* Changed from absolute to fixed for full screen overlay */
+    top: 60px;
+    /* Adjust based on header height */
     left: 0;
     right: 0;
+    bottom: 0;
+    height: calc(100vh - 60px);
     background: #1a1a1a;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    transform: translateY(-100%);
-    opacity: 0;
+    transform: translateX(100%);
+    /* Slide from right instead of top */
+    opacity: 1;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, visibility 0.3s ease;
     border-top: 1px solid #333;
+    overflow-y: auto;
+    z-index: 999;
   }
 
   .nav-open {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translateX(0);
     visibility: visible;
   }
 
   .nav-list {
     flex-direction: column;
     padding: 2rem;
-    gap: 1rem;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
   }
 
+  .nav-list button {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  /* Keep controls visible but compact */
   .header-controls {
     display: flex;
-    width: 100%;
+    width: auto;
     justify-content: flex-end;
-    order: 3;
+    order: 2;
+    gap: 0.25rem;
   }
-  
+
+  .flag-btn {
+    padding: 0.25rem;
+  }
+
   .hamburger {
     display: flex;
-    order: 2;
+    order: 3;
+    margin-left: 0.5rem;
   }
-} 
+}
