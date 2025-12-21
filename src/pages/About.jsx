@@ -13,8 +13,8 @@ const AboutPage = () => {
       <Meta name="description" content={t().seo.about.description} />
       <section class="page-header">
         <div class="container">
-          <h1 tabindex="0">Sobre Nosotros</h1>
-          <p>Experiencia y Profesionalismo en Investigación Privada</p>
+          <h1 tabindex="0">{t().about.pageHeader.title}</h1>
+          <p>{t().about.pageHeader.subtitle}</p>
         </div>
       </section>
       <About />

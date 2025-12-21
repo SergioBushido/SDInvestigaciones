@@ -64,6 +64,10 @@ export const translations = {
       cta: {
         text: '¿Necesitas nuestros servicios? Contáctanos para una consulta gratuita.',
         button: 'Contactar Ahora'
+      },
+      pageHeader: {
+        title: 'Nuestros Servicios de Detective Privado',
+        subtitle: 'Servicios profesionales y confidenciales en Tenerife'
       }
     },
     about: {
@@ -101,11 +105,19 @@ export const translations = {
         title: '¿Listo para resolver tu caso?',
         description: 'Contacta con nosotros para una consulta gratuita y confidencial.',
         button: 'Consulta Gratuita'
+      },
+      pageHeader: {
+        title: 'Sobre Nosotros',
+        subtitle: 'Experiencia y Profesionalismo en Investigación Privada'
       }
     },
     contact: {
       title: 'Contacto',
       subtitle: 'Estamos aquí para ayudarte. Contáctanos para una consulta gratuita y confidencial.',
+      pageHeader: {
+        title: 'Contacto',
+        subtitle: 'Estamos aquí para ayudarte. Consulta gratuita y confidencial.'
+      },
       info: {
         title: 'Información de Contacto',
         description: 'Puedes contactarnos a través de cualquiera de estos medios. Estamos disponibles 24/7 para casos urgentes.',
@@ -349,6 +361,10 @@ export const translations = {
       cta: {
         text: 'Need our services? Contact us for a free consultation.',
         button: 'Contact Now'
+      },
+      pageHeader: {
+        title: 'Our Private Detective Services',
+        subtitle: 'Professional and confidential services in Tenerife'
       }
     },
     about: {
@@ -386,11 +402,19 @@ export const translations = {
         title: 'Ready to solve your case?',
         description: 'Contact us for a free and confidential consultation.',
         button: 'Free Consultation'
+      },
+      pageHeader: {
+        title: 'About Us',
+        subtitle: 'Experience and Professionalism in Private Investigation'
       }
     },
     contact: {
       title: 'Contact',
       subtitle: 'We are here to help you. Contact us for a free and confidential consultation.',
+      pageHeader: {
+        title: 'Contact',
+        subtitle: 'We are here to help you. Free and confidential consultation.'
+      },
       info: {
         title: 'Contact Information',
         description: 'You can contact us through any of these means. We are available 24/7 for urgent cases.',
@@ -634,6 +658,10 @@ export const translations = {
       cta: {
         text: 'Benötigen Sie unsere Dienstleistungen? Kontaktieren Sie uns für eine kostenlose Beratung.',
         button: 'Jetzt kontaktieren'
+      },
+      pageHeader: {
+        title: 'Unsere Privatdetektiv-Dienstleistungen',
+        subtitle: 'Professionelle und vertrauliche Dienstleistungen auf Teneriffa'
       }
     },
     about: {
@@ -671,11 +699,19 @@ export const translations = {
         title: 'Bereit, Ihren Fall zu lösen?',
         description: 'Kontaktieren Sie uns für eine kostenlose und vertrauliche Beratung.',
         button: 'Kostenlose Beratung'
+      },
+      pageHeader: {
+        title: 'Über uns',
+        subtitle: 'Erfahrung und Professionalität in der Privatermittlung'
       }
     },
     contact: {
       title: 'Kontakt',
       subtitle: 'Wir sind hier, um Ihnen zu helfen. Kontaktieren Sie uns für eine kostenlose und vertrauliche Beratung.',
+      pageHeader: {
+        title: 'Kontakt',
+        subtitle: 'Wir sind hier, um Ihnen zu helfen. Kostenlose und vertrauliche Beratung.'
+      },
       info: {
         title: 'Kontaktinformationen',
         description: 'Sie können uns über jeden dieser Wege kontaktieren. Wir sind 24/7 für dringende Fälle verfügbar.',

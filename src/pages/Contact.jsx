@@ -13,8 +13,8 @@ const ContactPage = () => {
       <Meta name="description" content={t().seo.contact.description} />
       <section class="page-header">
         <div class="container">
-          <h1 tabindex="0">Contacto</h1>
-          <p>Estamos aquí para ayudarte. Consulta gratuita y confidencial.</p>
+          <h1 tabindex="0">{t().contact.pageHeader.title}</h1>
+          <p>{t().contact.pageHeader.subtitle}</p>
         </div>
       </section>
       <Contact />

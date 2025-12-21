@@ -13,8 +13,8 @@ const ServicesPage = () => {
       <Meta name="description" content={t().seo.services.description} />
       <section class="page-header">
         <div class="container">
-          <h1>Nuestros Servicios de Detective Privado</h1>
-          <p>Servicios profesionales y confidenciales en Tenerife</p>
+          <h1>{t().services.pageHeader.title}</h1>
+          <p>{t().services.pageHeader.subtitle}</p>
         </div>
       </section>
       <Services />
