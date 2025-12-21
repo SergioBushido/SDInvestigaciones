@@ -18,7 +18,7 @@ div.hero-underlay {
 }
 
 body.light-theme div.hero-underlay {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.7), rgba(118, 75, 162, 0.7));
+  background: linear-gradient(135deg, rgba(110, 98, 98, 0.7), rgba(25, 25, 25, 0.7));
 }
 
 .hero-bg-image {

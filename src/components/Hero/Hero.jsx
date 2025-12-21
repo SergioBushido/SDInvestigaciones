@@ -6,16 +6,11 @@ const Hero = () => {
   const { language } = useAppContext();
   const t = () => translations[language()];
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  /* scrollToSection removed as it was unused and buttons use inline logic */
 
   return (
     <section id="inicio" class="hero">
-      <div class="hero-underlay"></div>
+      <div class="hero-underlay" />
       <img 
         src="/hero-bg.avif"
         alt="Agencia de Detectives en Tenerife" 

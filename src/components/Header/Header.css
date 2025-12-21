@@ -105,12 +105,42 @@
   padding: 0.5rem;
   border-radius: 5px;
   transition: all 0.3s ease;
-  opacity: 0.7;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle svg {
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: all 0.3s ease;
+}
+
+/* Sol - Amarillo/Naranja */
+.theme-toggle svg:has(circle) {
+  stroke: #fbbf24;
+  fill: #fcd34d;
+}
+
+/* Luna - Azul/Blanco */
+.theme-toggle svg:not(:has(circle)) {
+  stroke: #60a5fa;
+  fill: #93c5fd;
 }
 
 .theme-toggle:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.15) rotate(15deg);
+}
+
+.theme-toggle:hover svg:has(circle) {
+  filter: drop-shadow(0 0 12px #fbbf24);
+}
+
+.theme-toggle:hover svg:not(:has(circle)) {
+  filter: drop-shadow(0 0 12px #60a5fa);
 }
 
 .nav-list button {

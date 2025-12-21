@@ -1,6 +1,7 @@
 import { createSignal, For } from 'solid-js';
 import { useAppContext } from '../../context/AppContext';
 import { translations } from '../../translations/translations';
+import { Icons } from '../Icons/Icons';
 import './Contact.css';
 
 const Contact = () => {
@@ -72,19 +73,19 @@ const Contact = () => {
 
               <div class="contact-details">
                 <div class="contact-item">
-                  <span class="contact-icon">📞</span>
+                  <span class="contact-icon"><Icons.Phone size="24" color="#9ca3af" /></span>
                   <div><h4>{t().contact.info.details.phone}</h4><p>643697615</p></div>
                 </div>
                 <div class="contact-item">
-                  <span class="contact-icon">📧</span>
+                  <span class="contact-icon"><Icons.Mail size="24" color="#9ca3af" /></span>
                   <div><h4>{t().contact.info.details.email}</h4><p>sdinvestigaciones@gmail.com</p></div>
                 </div>
                 <div class="contact-item">
-                  <span class="contact-icon">📍</span>
+                  <span class="contact-icon"><Icons.MapPin size="24" color="#9ca3af" /></span>
                   <div><h4>{t().contact.info.details.address}</h4><p>Candelaria, 38530, Santa Cruz De Tenerife, Spain</p></div>
                 </div>
                 <div class="contact-item">
-                  <span class="contact-icon">⏰</span>
+                  <span class="contact-icon"><Icons.Clock size="24" color="#9ca3af" /></span>
                   <div><h4>{t().contact.info.details.hours}</h4><p>{t().contact.info.details.hoursValue}</p></div>
                 </div>
               </div>

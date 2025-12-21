@@ -1,32 +1,16 @@
 import { For } from 'solid-js';
+import { A } from '@solidjs/router';
 import { useAppContext } from '../../context/AppContext';
 import { translations } from '../../translations/translations';
+import { Icons } from '../Icons/Icons';
 import './Footer.css';
-
-let useNavigate;
-try {
-  ({ useNavigate } = await import('@solidjs/router'));
-} catch (e) {
-  console.error("⚠️ No se pudo importar 'useNavigate' de @solidjs/router:", e);
-}
 
 const Footer = () => {
   const { language } = useAppContext();
   const t = () => translations[language()];
 
-  let navigate = () => {};
-  try {
-    navigate = useNavigate();
-  } catch {
-    console.warn('⚠️ Footer renderizado fuera del Router. Navegación deshabilitada.');
-  }
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleNavClick = (path) => {
-    if (navigate) navigate(path);
   };
 
   return (
@@ -35,7 +19,10 @@ const Footer = () => {
         <div class="footer-content">
 
           <div class="footer-section">
-            <h3>🔍 SD INVESTIGACIONES</h3>
+            <h3 style={{ display: 'flex', 'align-items': 'center', gap: '0.5rem' }}>
+              <Icons.Search size="24" color="#9ca3af" />
+              SD INVESTIGACIONES
+            </h3>
             <p>
               {t().footer.licenseInfo}
               <br />
@@ -43,11 +30,7 @@ const Footer = () => {
               <br />
               {t().footer.validity}
             </p>
-            <div class="social-links">
-              <a href="#" class="social-link">📱 {t().footer.social.whatsapp}</a>
-              <a href="#" class="social-link">📧 {t().footer.social.email}</a>
-              <a href="#" class="social-link">📞 {t().footer.social.phone}</a>
-            </div>
+
           </div>
 
           <div class="footer-section">
@@ -56,9 +39,9 @@ const Footer = () => {
               <For each={t().services.items}>
                 {(service) => (
                   <li>
-                    <button onClick={() => handleNavClick('/servicios')}>
+                    <A href={`/servicios#${service.id || ''}`} class="footer-link-item">
                       {service.title}
-                    </button>
+                    </A>
                   </li>
                 )}
               </For>
@@ -68,22 +51,51 @@ const Footer = () => {
           <div class="footer-section">
             <h4>{t().footer.links.information || 'Información'}</h4>
             <ul class="footer-links">
-              <li><button onClick={() => handleNavClick('/sobre-nosotros')}>{t().footer.links.about}</button></li>
-              <li><button onClick={() => handleNavClick('/contacto')}>{t().footer.links.contact}</button></li>
-              <li><a href="#">{t().footer.links.privacy}</a></li>
-              <li><a href="#">{t().footer.links.terms}</a></li>
-              <li><a href="#">{t().footer.links.legal}</a></li>
+              <li><A href="/sobre-nosotros" class="footer-link-item">{t().footer.links.about}</A></li>
+              <li><A href="/contacto" class="footer-link-item">{t().footer.links.contact}</A></li>
+              <li><A href="/privacy" class="footer-link-item">{t().footer.links.privacy}</A></li>
+              <li><A href="/terms" class="footer-link-item">{t().footer.links.terms}</A></li>
+              <li><A href="/legal" class="footer-link-item">{t().footer.links.legal}</A></li>
             </ul>
           </div>
 
           <div class="footer-section">
             <h4>{t().footer.links.contact}</h4>
             <div class="contact-info">
-              <p>📞 643697615</p>
-              <p>📧 sdinvestigaciones@gmail.com</p>
-              <p>📍 Candelaria, 38530, Santa Cruz De Tenerife, Spain</p>
-              <p>⏰ Lun-Vie: 9:00-18:00</p>
+              <p style={{ display: 'flex', 'align-items': 'center', gap: '0.5rem' }}>
+                <Icons.Phone size="18" color="#9ca3af" />
+                643697615
+              </p>
+              <p style={{ display: 'flex', 'align-items': 'center', gap: '0.5rem' }}>
+                <Icons.Mail size="18" color="#9ca3af" />
+                sdinvestigaciones@gmail.com
+              </p>
+              <p style={{ display: 'flex', 'align-items': 'center', gap: '0.5rem' }}>
+                <Icons.MapPin size="18" color="#9ca3af" />
+                Candelaria, 38530, Santa Cruz De Tenerife, Spain
+              </p>
+              <p style={{ display: 'flex', 'align-items': 'center', gap: '0.5rem' }}>
+                <Icons.Clock size="18" color="#9ca3af" />
+                Lun-Vie: 9:00-18:00
+              </p>
             </div>
+          </div>
+        </div>
+
+        <div class="footer-social-section">
+          <div class="social-links">
+            <a href="https://wa.me/34643697615" target="_blank" rel="noopener noreferrer" class="social-link" style={{ display: 'flex', 'align-items': 'center', gap: '0.5rem' }}>
+              <Icons.Smartphone size="18" color="#9ca3af" />
+              {t().footer.social.whatsapp}
+            </a>
+            <a href="mailto:sdinvestigaciones@gmail.com" class="social-link" style={{ display: 'flex', 'align-items': 'center', gap: '0.5rem' }}>
+              <Icons.Mail size="18" color="#9ca3af" />
+              {t().footer.social.email}
+            </a>
+            <a href="tel:+34643697615" class="social-link" style={{ display: 'flex', 'align-items': 'center', gap: '0.5rem' }}>
+              <Icons.Phone size="18" color="#9ca3af" />
+              {t().footer.social.phone}
+            </a>
           </div>
         </div>
 

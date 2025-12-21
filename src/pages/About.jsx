@@ -1,11 +1,16 @@
 import { Title, Meta } from '@solidjs/meta';
+import { useAppContext } from '../context/AppContext';
+import { translations } from '../translations/translations';
 import About from '../components/About/About';
 
 const AboutPage = () => {
+  const { language } = useAppContext();
+  const t = () => translations[language()];
+
   return (
     <main>
-      <Title>Sobre Nosotros - SD INVESTIGACIONES</Title>
-      <Meta name="description" content="Conoce a SD INVESTIGACIONES, tu agencia de confianza en Tenerife. Licencia oficial y equipo experto en investigación." />
+      <Title>{t().seo.about.title}</Title>
+      <Meta name="description" content={t().seo.about.description} />
       <section class="page-header">
         <div class="container">
           <h1 tabindex="0">Sobre Nosotros</h1>

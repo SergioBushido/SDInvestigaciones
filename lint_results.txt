@@ -1,0 +1,35 @@
+
+> sheila-detective-privado@1.0.0 lint
+> eslint . --ext js,jsx,ts,tsx
+
+
+C:\Users\sergi\Desktop\MiApp\Sheila\src\components\Footer\Footer.jsx
+   39:23   warning  Use an object for the style prop instead of a string  solid/style-prop
+   82:24   warning  Use an object for the style prop instead of a string  solid/style-prop
+   86:24   warning  Use an object for the style prop instead of a string  solid/style-prop
+   90:24   warning  Use an object for the style prop instead of a string  solid/style-prop
+   94:24   warning  Use an object for the style prop instead of a string  solid/style-prop
+  104:117  warning  Use an object for the style prop instead of a string  solid/style-prop
+  108:84   warning  Use an object for the style prop instead of a string  solid/style-prop
+  112:66   warning  Use an object for the style prop instead of a string  solid/style-prop
+
+C:\Users\sergi\Desktop\MiApp\Sheila\src\components\Hero\Hero.jsx
+   9:9  error    'scrollToSection' is assigned a value but never used  no-unused-vars
+  18:7  warning  Empty components are self-closing                     solid/self-closing-comp
+
+C:\Users\sergi\Desktop\MiApp\Sheila\src\components\Services\Services.jsx
+  55:17  warning  Empty components are self-closing  solid/self-closing-comp
+
+C:\Users\sergi\Desktop\MiApp\Sheila\src\pages\Legal.jsx
+  14:36  warning  Use an object for the style prop instead of a string  solid/style-prop
+
+C:\Users\sergi\Desktop\MiApp\Sheila\src\pages\Privacy.jsx
+  14:36  warning  Use an object for the style prop instead of a string                                                            solid/style-prop
+  32:14  error    Use Solid's `<For />` component for efficiently rendering lists. Array#map causes DOM elements to be recreated  solid/prefer-for
+
+C:\Users\sergi\Desktop\MiApp\Sheila\src\pages\Terms.jsx
+  14:36  warning  Use an object for the style prop instead of a string  solid/style-prop
+
+✖ 15 problems (2 errors, 13 warnings)
+  1 error and 13 warnings potentially fixable with the `--fix` option.
+

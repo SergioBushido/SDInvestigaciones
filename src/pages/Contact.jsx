@@ -1,11 +1,16 @@
 import { Title, Meta } from '@solidjs/meta';
+import { useAppContext } from '../context/AppContext';
+import { translations } from '../translations/translations';
 import Contact from '../components/Contact/Contact';
 
 const ContactPage = () => {
+  const { language } = useAppContext();
+  const t = () => translations[language()];
+
   return (
     <main>
-      <Title>Contacto - SD INVESTIGACIONES</Title>
-      <Meta name="description" content="Contacta con SD INVESTIGACIONES. Consulta gratuita y confidencial para tu caso en Tenerife. Llámanos o escríbenos." />
+      <Title>{t().seo.contact.title}</Title>
+      <Meta name="description" content={t().seo.contact.description} />
       <section class="page-header">
         <div class="container">
           <h1 tabindex="0">Contacto</h1>

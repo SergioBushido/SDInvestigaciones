@@ -1,0 +1,16 @@
+
+> sheila-detective-privado@1.0.0 lint
+> eslint . --ext js,jsx,ts,tsx
+
+
+C:\Users\sergi\Desktop\MiApp\Sheila\src\pages\About.jsx
+  4:3  error  Parsing error: 'return' outside of function
+
+C:\Users\sergi\Desktop\MiApp\Sheila\src\pages\Contact.jsx
+  4:3  error  Parsing error: 'return' outside of function
+
+C:\Users\sergi\Desktop\MiApp\Sheila\src\pages\Services.jsx
+  4:3  error  Parsing error: 'return' outside of function
+
+✖ 3 problems (3 errors, 0 warnings)
+

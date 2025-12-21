@@ -25,31 +25,37 @@ export const translations = {
       subtitle: 'Ofrecemos una amplia gama de servicios de investigación privada para satisfacer todas tus necesidades.',
       items: [
         {
+          id: 'infidelity',
           title: 'Investigación de Infidelidad',
           description: 'Verificamos la fidelidad de tu pareja con métodos discretos y profesionales.',
           features: ['Evidencia fotográfica', 'Seguimiento discreto', 'Informes detallados']
         },
         {
+          id: 'people',
           title: 'Investigación de Personas',
           description: 'Localizamos personas desaparecidas o de las que necesitas información.',
           features: ['Búsqueda exhaustiva', 'Verificación de identidad', 'Informes completos']
         },
         {
+          id: 'corporate',
           title: 'Investigación Empresarial',
           description: 'Protegemos tu negocio con investigaciones corporativas y de competencia.',
           features: ['Espionaje industrial', 'Verificación de empleados', 'Análisis de riesgos']
         },
         {
+          id: 'financial',
           title: 'Investigación Financiera',
           description: 'Descubrimos fraudes y verificamos la situación financiera de personas o empresas.',
           features: ['Análisis de activos', 'Detección de fraudes', 'Informes financieros']
         },
         {
+          id: 'electronic',
           title: 'Vigilancia Electrónica',
           description: 'Instalamos sistemas de vigilancia y monitoreo para tu seguridad.',
           features: ['Cámaras ocultas', 'GPS tracking', 'Monitoreo 24/7']
         },
         {
+          id: 'insurance',
           title: 'Investigación de Seguros',
           description: 'Verificamos reclamaciones de seguros para detectar fraudes.',
           features: ['Análisis de siniestros', 'Verificación de daños', 'Informes para aseguradoras']
@@ -142,6 +148,18 @@ export const translations = {
       home: {
         title: 'SD Investigaciones | Detectives Privados en Tenerife | TIP 6091 & RNSP 11582',
         description: 'Detectives privados profesionales en Tenerife. Servicios de investigación confidenciales: infidelidad, personas, empresarial, financiera. Consulta gratuita 24/7.'
+      },
+      services: {
+        title: 'Servicios de Detectives Privados en Tenerife | SD Investigaciones',
+        description: 'Amplia gama de servicios de investigación privada en Tenerife: infidelidades, localización de personas, bajas laborales, barridos electrónicos.'
+      },
+      about: {
+        title: 'Sobre SD Investigaciones | Detectives Privados con Licencia',
+        description: 'Conoce a SD Investigaciones. Agencia de detectives líder en Tenerife con más de 15 años de experiencia y licencia oficial del Ministerio del Interior.'
+      },
+      contact: {
+        title: 'Contactar Detective Privado en Tenerife | Consulta Gratuita',
+        description: 'Contacta con SD Investigaciones. Estamos disponibles 24/7 para urgencias. Consulta gratuita y confidencial. Tel: 643697615.'
       }
     },
     footer: {
@@ -163,6 +181,107 @@ export const translations = {
       },
       copyright: 'Todos los derechos reservados.',
       scrollTop: 'Volver arriba'
+    },
+    legal: {
+      privacy: {
+        title: 'Política de Privacidad',
+        metaTitle: 'Política de Privacidad - SD INVESTIGACIONES',
+        sections: {
+          responsible: {
+            title: '1. Responsable del Tratamiento',
+            content: 'En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales, le informamos que los datos personales que nos facilite serán tratados por SD INVESTIGACIONES.',
+            details: {
+              name: 'Nombre comercial:',
+              nameValue: 'SD Investigaciones',
+              address: 'Domicilio:',
+              addressValue: 'Candelaria, 38530, Santa Cruz De Tenerife, Spain',
+              email: 'Email:',
+              emailValue: 'sdinvestigaciones@gmail.com',
+              phone: 'Teléfono:',
+              phoneValue: '643697615'
+            }
+          },
+          purpose: {
+            title: '2. Finalidad del Tratamiento',
+            intro: 'Tratamos la información que nos facilitan las personas interesadas con el fin de:',
+            items: [
+              'Gestionar la relación contractual o precontractual.',
+              'Prestar los servicios de investigación privada solicitados.',
+              'Atender consultas y solicitudes de información.'
+            ]
+          },
+          legal: {
+            title: '3. Base Jurídica',
+            content: 'La base legal para el tratamiento de sus datos es la ejecución del contrato de prestación de servicios o el consentimiento expreso del interesado para la atención de consultas.'
+          },
+          recipients: {
+            title: '4. Destinatarios',
+            content: 'Sus datos no se cederán a terceros salvo obligación legal o cuando sea necesario para la ejecución del servicio contratado (ej. Juzgados y Tribunales).'
+          },
+          rights: {
+            title: '5. Derechos',
+            content: 'Tiene derecho a acceder, rectificar y suprimir los datos, así como otros derechos como la limitación u oposición al tratamiento, dirigiéndose a sdinvestigaciones@gmail.com.'
+          },
+          security: {
+            title: '6. Seguridad',
+            content: 'Aplicamos las medidas de seguridad necesarias para evitar el robo, alteración o acceso no autorizado a los datos.'
+          }
+        }
+      },
+      terms: {
+        title: 'Términos y Condiciones',
+        metaTitle: 'Términos y Condiciones - SD INVESTIGACIONES',
+        sections: {
+          intro: {
+            title: '1. Introducción',
+            content: 'Bienvenido a la web de SD INVESTIGACIONES. Al acceder y utilizar este sitio web, usted acepta cumplir con los siguientes términos y condiciones de uso.'
+          },
+          services: {
+            title: '2. Servicios',
+            content: 'SD INVESTIGACIONES ofrece servicios de investigación privada regulados por la Ley 5/2014 de Seguridad Privada. Los servicios se prestarán siempre bajo contrato y con interés legítimo acreditado.'
+          },
+          intellectual: {
+            title: '3. Propiedad Intelectual',
+            content: 'Todos los contenidos de este sitio web (textos, logos, imágenes) son propiedad de SD INVESTIGACIONES o de terceros que han autorizado su uso. Queda prohibida su reproducción sin autorización.'
+          },
+          liability: {
+            title: '4. Limitación de Responsabilidad',
+            content: 'SD INVESTIGACIONES no se hace responsable de los daños derivados del uso indebido de la web o de interrupciones del servicio por causas ajenas.'
+          },
+          legislation: {
+            title: '5. Legislación',
+            content: 'Estos términos se rigen por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales de Santa Cruz de Tenerife.'
+          }
+        }
+      },
+      legalNotice: {
+        title: 'Aviso Legal',
+        metaTitle: 'Aviso Legal - SD INVESTIGACIONES',
+        sections: {
+          identification: {
+            title: 'Datos Identificativos',
+            intro: 'En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), a continuación se reflejan los siguientes datos:',
+            items: {
+              owner: 'Titular:',
+              ownerValue: 'Sheila (SD INVESTIGACIONES)',
+              address: 'Domicilio:',
+              addressValue: 'Candelaria, 38530, Santa Cruz De Tenerife, Spain',
+              tip: 'TIP (Tarjeta de Identidad Profesional):',
+              tipValue: '6.091',
+              rnsp: 'RNSP (Registro Nacional de Seguridad Privada):',
+              rnspValue: '11.582',
+              email: 'Email de contacto:',
+              emailValue: 'sdinvestigaciones@gmail.com',
+              phone: 'Teléfono:',
+              phoneValue: '643697615'
+            }
+          },
+          authorization: {
+            title: 'Habilitación Profesional',
+            content: 'La actividad de Detective Privado está regulada en España por la Ley 5/2014 de Seguridad Privada y el Reglamento de Seguridad Privada. SD INVESTIGACIONES cuenta con todas las habilitaciones necesarias expedidas por el Ministerio del Interior (Dirección General de la Policía).'
+          }
+        }
+      }
     }
   },
   en: {
@@ -191,31 +310,37 @@ export const translations = {
       subtitle: 'We offer a wide range of private investigation services to meet all your needs.',
       items: [
         {
+          id: 'infidelity',
           title: 'Infidelity Investigation',
           description: 'We verify your partner\'s fidelity with discrete and professional methods.',
           features: ['Photographic evidence', 'Discrete surveillance', 'Detailed reports']
         },
         {
+          id: 'people',
           title: 'People Investigation',
           description: 'We locate missing persons or those you need information about.',
           features: ['Exhaustive search', 'Identity verification', 'Complete reports']
         },
         {
+          id: 'corporate',
           title: 'Corporate Investigation',
           description: 'We protect your business with corporate and competitive investigations.',
           features: ['Industrial espionage', 'Employee verification', 'Risk analysis']
         },
         {
+          id: 'financial',
           title: 'Financial Investigation',
           description: 'We uncover fraud and verify the financial situation of individuals or companies.',
           features: ['Asset analysis', 'Fraud detection', 'Financial reports']
         },
         {
+          id: 'electronic',
           title: 'Electronic Surveillance',
           description: 'We install surveillance and monitoring systems for your security.',
           features: ['Hidden cameras', 'GPS tracking', '24/7 monitoring']
         },
         {
+          id: 'insurance',
           title: 'Insurance Investigation',
           description: 'We verify insurance claims to detect fraud.',
           features: ['Claims analysis', 'Damage verification', 'Reports for insurers']
@@ -308,6 +433,18 @@ export const translations = {
       home: {
         title: 'SD Investigations | Private Detectives in Tenerife | TIP 6091 & RNSP 11582',
         description: 'Professional private detectives in Tenerife. Confidential investigation services: infidelity, people, corporate, financial. Free consultation 24/7.'
+      },
+      services: {
+        title: 'Private Detective Services in Tenerife | SD Investigations',
+        description: 'Wide range of private investigation services in Tenerife: infidelity, people location, sick leave fraud, electronic sweeping.'
+      },
+      about: {
+        title: 'About SD Investigations | Licensed Private Detectives',
+        description: 'Meet SD Investigations. Leading detective agency in Tenerife with over 15 years of experience and official license from the Ministry of the Interior.'
+      },
+      contact: {
+        title: 'Contact Private Detective in Tenerife | Free Consultation',
+        description: 'Contact SD Investigations. We are available 24/7 for emergencies. Free and confidential consultation. Tel: +34 643697615.'
       }
     },
     footer: {
@@ -329,6 +466,107 @@ export const translations = {
       },
       copyright: 'All rights reserved.',
       scrollTop: 'Back to top'
+    },
+    legal: {
+      privacy: {
+        title: 'Privacy Policy',
+        metaTitle: 'Privacy Policy - SD INVESTIGACIONES',
+        sections: {
+          responsible: {
+            title: '1. Data Controller',
+            content: 'In compliance with Regulation (EU) 2016/679 of the European Parliament and of the Council (GDPR) and Organic Law 3/2018 on the Protection of Personal Data and guarantee of digital rights, we inform you that the personal data you provide will be processed by SD INVESTIGACIONES.',
+            details: {
+              name: 'Trade name:',
+              nameValue: 'SD Investigaciones',
+              address: 'Address:',
+              addressValue: 'Candelaria, 38530, Santa Cruz De Tenerife, Spain',
+              email: 'Email:',
+              emailValue: 'sdinvestigaciones@gmail.com',
+              phone: 'Phone:',
+              phoneValue: '643697615'
+            }
+          },
+          purpose: {
+            title: '2. Purpose of Processing',
+            intro: 'We process the information provided by interested parties for the following purposes:',
+            items: [
+              'Managing contractual or pre-contractual relationships.',
+              'Providing requested private investigation services.',
+              'Handling inquiries and information requests.'
+            ]
+          },
+          legal: {
+            title: '3. Legal Basis',
+            content: 'The legal basis for processing your data is the execution of the service provision contract or the express consent of the interested party for handling inquiries.'
+          },
+          recipients: {
+            title: '4. Recipients',
+            content: 'Your data will not be transferred to third parties except when legally required or when necessary for the execution of the contracted service (e.g., Courts and Tribunals).'
+          },
+          rights: {
+            title: '5. Rights',
+            content: 'You have the right to access, rectify and delete your data, as well as other rights such as limitation or opposition to processing, by contacting sdinvestigaciones@gmail.com.'
+          },
+          security: {
+            title: '6. Security',
+            content: 'We apply the necessary security measures to prevent theft, alteration or unauthorized access to data.'
+          }
+        }
+      },
+      terms: {
+        title: 'Terms and Conditions',
+        metaTitle: 'Terms and Conditions - SD INVESTIGACIONES',
+        sections: {
+          intro: {
+            title: '1. Introduction',
+            content: 'Welcome to the SD INVESTIGACIONES website. By accessing and using this website, you agree to comply with the following terms and conditions of use.'
+          },
+          services: {
+            title: '2. Services',
+            content: 'SD INVESTIGACIONES offers private investigation services regulated by Law 5/2014 on Private Security. Services will always be provided under contract and with proven legitimate interest.'
+          },
+          intellectual: {
+            title: '3. Intellectual Property',
+            content: 'All contents of this website (texts, logos, images) are property of SD INVESTIGACIONES or third parties who have authorized their use. Reproduction without authorization is prohibited.'
+          },
+          liability: {
+            title: '4. Limitation of Liability',
+            content: 'SD INVESTIGACIONES is not responsible for damages arising from improper use of the website or service interruptions due to external causes.'
+          },
+          legislation: {
+            title: '5. Legislation',
+            content: 'These terms are governed by Spanish legislation. For any dispute, the parties submit to the courts and tribunals of Santa Cruz de Tenerife.'
+          }
+        }
+      },
+      legalNotice: {
+        title: 'Legal Notice',
+        metaTitle: 'Legal Notice - SD INVESTIGACIONES',
+        sections: {
+          identification: {
+            title: 'Identification Data',
+            intro: 'In compliance with the duty of information contained in Article 10 of Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSI-CE), the following data is provided:',
+            items: {
+              owner: 'Owner:',
+              ownerValue: 'Sheila (SD INVESTIGACIONES)',
+              address: 'Address:',
+              addressValue: 'Candelaria, 38530, Santa Cruz De Tenerife, Spain',
+              tip: 'TIP (Professional Identity Card):',
+              tipValue: '6.091',
+              rnsp: 'RNSP (National Private Security Registry):',
+              rnspValue: '11.582',
+              email: 'Contact email:',
+              emailValue: 'sdinvestigaciones@gmail.com',
+              phone: 'Phone:',
+              phoneValue: '643697615'
+            }
+          },
+          authorization: {
+            title: 'Professional Authorization',
+            content: 'The activity of Private Detective is regulated in Spain by Law 5/2014 on Private Security and the Private Security Regulation. SD INVESTIGACIONES has all the necessary authorizations issued by the Ministry of the Interior (General Directorate of Police).'
+          }
+        }
+      }
     }
   },
   de: {
@@ -357,31 +595,37 @@ export const translations = {
       subtitle: 'Wir bieten eine breite Palette von Privatermittlungsdiensten, um alle Ihre Bedürfnisse zu erfüllen.',
       items: [
         {
+          id: 'infidelity',
           title: 'Untreue-Untersuchung',
           description: 'Wir überprüfen die Treue Ihres Partners mit diskreten und professionellen Methoden.',
           features: ['Fotografische Beweise', 'Diskrete Überwachung', 'Detaillierte Berichte']
         },
         {
+          id: 'people',
           title: 'Personensuche',
           description: 'Wir lokalisieren vermisste Personen oder solche, über die Sie Informationen benötigen.',
           features: ['Erschöpfende Suche', 'Identitätsüberprüfung', 'Vollständige Berichte']
         },
         {
+          id: 'corporate',
           title: 'Unternehmensermittlung',
           description: 'Wir schützen Ihr Unternehmen mit Unternehmens- und Wettbewerbsermittlungen.',
           features: ['Industriespionage', 'Mitarbeiterüberprüfung', 'Risikoanalyse']
         },
         {
+          id: 'financial',
           title: 'Finanzermittlung',
           description: 'Wir decken Betrug auf und überprüfen die finanzielle Situation von Personen oder Unternehmen.',
           features: ['Vermögensanalyse', 'Betrugserkennung', 'Finanzberichte']
         },
         {
+          id: 'electronic',
           title: 'Elektronische Überwachung',
           description: 'Wir installieren Überwachungs- und Monitoringsysteme für Ihre Sicherheit.',
           features: ['Versteckte Kameras', 'GPS-Tracking', '24/7-Überwachung']
         },
         {
+          id: 'insurance',
           title: 'Versicherungsermittlung',
           description: 'Wir überprüfen Versicherungsansprüche, um Betrug zu erkennen.',
           features: ['Anspruchsanalyse', 'Schadensüberprüfung', 'Berichte für Versicherer']
@@ -474,6 +718,18 @@ export const translations = {
       home: {
         title: 'SD Ermittlungen | Privatdetektive auf Teneriffa | TIP 6091 & RNSP 11582',
         description: 'Professionelle Privatdetektive auf Teneriffa. Vertrauliche Ermittlungsdienste: Untreue, Personen, Unternehmen, Finanzen. Kostenlose Beratung 24/7.'
+      },
+      services: {
+        title: 'Privatdetektiv-Dienstleistungen auf Teneriffa | SD Ermittlungen',
+        description: 'Breites Spektrum an privaten Ermittlungsdiensten auf Teneriffa: Untreue, Personensuche, Krankschreibungsbetrug, Abhörschutz.'
+      },
+      about: {
+        title: 'Über SD Ermittlungen | Lizenzierte Privatdetektive',
+        description: 'Lernen Sie SD Ermittlungen kennen. Führende Detektei auf Teneriffa mit über 15 Jahren Erfahrung und offizieller Lizenz des Innenministeriums.'
+      },
+      contact: {
+        title: 'Privatdetektiv auf Teneriffa kontaktieren | Kostenlose Beratung',
+        description: 'Kontaktieren Sie SD Ermittlungen. Wir sind 24/7 für Notfälle erreichbar. Kostenlose und vertrauliche Beratung. Tel: +34 643697615.'
       }
     },
     footer: {
@@ -495,6 +751,107 @@ export const translations = {
       },
       copyright: 'Alle Rechte vorbehalten.',
       scrollTop: 'Nach oben'
+    },
+    legal: {
+      privacy: {
+        title: 'Datenschutzrichtlinie',
+        metaTitle: 'Datenschutzrichtlinie - SD INVESTIGACIONES',
+        sections: {
+          responsible: {
+            title: '1. Verantwortlicher für die Datenverarbeitung',
+            content: 'In Übereinstimmung mit der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates (DSGVO) und dem Organgesetz 3/2018 über den Schutz personenbezogener Daten und die Gewährleistung digitaler Rechte informieren wir Sie, dass die von Ihnen bereitgestellten personenbezogenen Daten von SD INVESTIGACIONES verarbeitet werden.',
+            details: {
+              name: 'Handelsname:',
+              nameValue: 'SD Investigaciones',
+              address: 'Adresse:',
+              addressValue: 'Candelaria, 38530, Santa Cruz De Tenerife, Spanien',
+              email: 'E-Mail:',
+              emailValue: 'sdinvestigaciones@gmail.com',
+              phone: 'Telefon:',
+              phoneValue: '643697615'
+            }
+          },
+          purpose: {
+            title: '2. Zweck der Verarbeitung',
+            intro: 'Wir verarbeiten die von interessierten Parteien bereitgestellten Informationen für folgende Zwecke:',
+            items: [
+              'Verwaltung vertraglicher oder vorvertraglicher Beziehungen.',
+              'Bereitstellung angeforderter privater Ermittlungsdienste.',
+              'Bearbeitung von Anfragen und Informationsanfragen.'
+            ]
+          },
+          legal: {
+            title: '3. Rechtsgrundlage',
+            content: 'Die Rechtsgrundlage für die Verarbeitung Ihrer Daten ist die Erfüllung des Dienstleistungsvertrags oder die ausdrückliche Einwilligung der betroffenen Person zur Bearbeitung von Anfragen.'
+          },
+          recipients: {
+            title: '4. Empfänger',
+            content: 'Ihre Daten werden nicht an Dritte weitergegeben, außer wenn dies gesetzlich vorgeschrieben ist oder für die Ausführung der beauftragten Dienstleistung erforderlich ist (z.B. Gerichte und Tribunale).'
+          },
+          rights: {
+            title: '5. Rechte',
+            content: 'Sie haben das Recht auf Zugang, Berichtigung und Löschung Ihrer Daten sowie andere Rechte wie Einschränkung oder Widerspruch gegen die Verarbeitung, indem Sie sich an sdinvestigaciones@gmail.com wenden.'
+          },
+          security: {
+            title: '6. Sicherheit',
+            content: 'Wir wenden die notwendigen Sicherheitsmaßnahmen an, um Diebstahl, Änderung oder unbefugten Zugriff auf Daten zu verhindern.'
+          }
+        }
+      },
+      terms: {
+        title: 'Allgemeine Geschäftsbedingungen',
+        metaTitle: 'Allgemeine Geschäftsbedingungen - SD INVESTIGACIONES',
+        sections: {
+          intro: {
+            title: '1. Einführung',
+            content: 'Willkommen auf der Website von SD INVESTIGACIONES. Durch den Zugriff auf und die Nutzung dieser Website erklären Sie sich damit einverstanden, die folgenden Nutzungsbedingungen einzuhalten.'
+          },
+          services: {
+            title: '2. Dienstleistungen',
+            content: 'SD INVESTIGACIONES bietet private Ermittlungsdienste an, die durch das Gesetz 5/2014 über private Sicherheit geregelt sind. Die Dienstleistungen werden immer unter Vertrag und mit nachgewiesenem berechtigtem Interesse erbracht.'
+          },
+          intellectual: {
+            title: '3. Geistiges Eigentum',
+            content: 'Alle Inhalte dieser Website (Texte, Logos, Bilder) sind Eigentum von SD INVESTIGACIONES oder Dritten, die ihre Nutzung genehmigt haben. Die Vervielfältigung ohne Genehmigung ist verboten.'
+          },
+          liability: {
+            title: '4. Haftungsbeschränkung',
+            content: 'SD INVESTIGACIONES haftet nicht für Schäden, die durch unsachgemäße Nutzung der Website oder Dienstunterbrechungen aufgrund externer Ursachen entstehen.'
+          },
+          legislation: {
+            title: '5. Gesetzgebung',
+            content: 'Diese Bedingungen unterliegen der spanischen Gesetzgebung. Bei Streitigkeiten unterwerfen sich die Parteien den Gerichten und Tribunalen von Santa Cruz de Tenerife.'
+          }
+        }
+      },
+      legalNotice: {
+        title: 'Rechtlicher Hinweis',
+        metaTitle: 'Rechtlicher Hinweis - SD INVESTIGACIONES',
+        sections: {
+          identification: {
+            title: 'Identifikationsdaten',
+            intro: 'In Übereinstimmung mit der Informationspflicht gemäß Artikel 10 des Gesetzes 34/2002 vom 11. Juli über Dienste der Informationsgesellschaft und elektronischen Geschäftsverkehr (LSSI-CE) werden folgende Daten bereitgestellt:',
+            items: {
+              owner: 'Inhaber:',
+              ownerValue: 'Sheila (SD INVESTIGACIONES)',
+              address: 'Adresse:',
+              addressValue: 'Candelaria, 38530, Santa Cruz De Tenerife, Spanien',
+              tip: 'TIP (Berufsausweis):',
+              tipValue: '6.091',
+              rnsp: 'RNSP (Nationales Register für private Sicherheit):',
+              rnspValue: '11.582',
+              email: 'Kontakt-E-Mail:',
+              emailValue: 'sdinvestigaciones@gmail.com',
+              phone: 'Telefon:',
+              phoneValue: '643697615'
+            }
+          },
+          authorization: {
+            title: 'Berufliche Genehmigung',
+            content: 'Die Tätigkeit als Privatdetektiv ist in Spanien durch das Gesetz 5/2014 über private Sicherheit und die Verordnung über private Sicherheit geregelt. SD INVESTIGACIONES verfügt über alle erforderlichen Genehmigungen, die vom Innenministerium (Generaldirektion der Polizei) ausgestellt wurden.'
+          }
+        }
+      }
     }
   }
 }; 

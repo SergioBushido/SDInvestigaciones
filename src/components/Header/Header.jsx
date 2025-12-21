@@ -11,7 +11,6 @@ const Header = (props) => {
   /* Estos hooks SÓLO funcionarán si Header está dentro del <Router>. */
   const navigate  = useNavigate();
   const location  = useLocation();
-  console.log('🟢 Header dentro del Router:', !!navigate); // debería imprimir true
 
   /* Scroll o navegación */
   const scrollToSection = (id) => {
@@ -74,7 +73,7 @@ const Header = (props) => {
       <div class="container">
         <div class="header-content">
           <div class="logo">
-            <img src="/logo.webp" alt="SD INVESTIGACIONES" class="logo-image" />
+            <img src="/logo-fox.png" alt="SD INVESTIGACIONES" class="logo-image" />
             <h2>SDinvestigaciones</h2>
           </div>
 
@@ -103,8 +102,19 @@ const Header = (props) => {
               )}</For>
             </div>
 
-            <button class="theme-toggle" onClick={toggleTheme}>
-              {isDarkMode() ? '☀️' : '🌙'}
+            <button class="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+              {isDarkMode() ? (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4"/>
+                  <path d="M12 2 L12 6 M12 18 L12 22 M22 12 L18 12 M6 12 L2 12"/>
+                  <path d="M17.66 6.34 L15.54 8.46 M8.46 15.54 L6.34 17.66"/>
+                  <path d="M17.66 17.66 L15.54 15.54 M8.46 8.46 L6.34 6.34"/>
+                </svg>
+              ) : (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+              )}
             </button>
           </div>
 
