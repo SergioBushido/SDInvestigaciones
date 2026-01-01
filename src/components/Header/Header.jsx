@@ -20,8 +20,12 @@ const Header = (props) => {
     };
 
     /* Si no estamos en la home, ve a la home y luego haz scroll  */
-    if (location.pathname !== '/') {
-      navigate('/');
+    const homePath = `/${language()}`;
+    const currentPath = location.pathname.replace(/\/$/, ''); // Remove trailing slash
+    
+    // Check if we are already at home (e.g. /es or /es/)
+    if (currentPath !== homePath && currentPath !== homePath + '/') {
+      navigate(homePath);
       setTimeout(go, 100);
     } else {
       go();
@@ -73,7 +77,7 @@ const Header = (props) => {
       <div class="container">
         <div class="header-content">
           <div class="logo">
-            <img src="/logo-fox.png" alt="SD INVESTIGACIONES" class="logo-image" />
+            <img src="/logo-fox.webp" alt="SD INVESTIGACIONES" class="logo-image" />
             <h2>SDinvestigaciones</h2>
           </div>
 

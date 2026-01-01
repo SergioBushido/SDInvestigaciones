@@ -106,7 +106,14 @@ body.light-theme .footer-links a {
 
 .footer-links button:hover,
 .footer-links a:hover {
-  color: #667eea;
+  color: #60a5fa;
+  /* Light Blue for dark mode hover */
+}
+
+body.light-theme .footer-links button:hover,
+body.light-theme .footer-links a:hover {
+  color: #1e40af;
+  /* Navy for light mode hover */
 }
 
 .contact-info p {

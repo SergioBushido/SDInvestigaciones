@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   color: white;
@@ -28,6 +28,7 @@ body.light-theme div.hero-underlay {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   z-index: 0;
 }
 
@@ -100,10 +101,11 @@ body.light-theme .feature {
 
 /* Light theme primary button */
 body.light-theme .btn-primary {
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(45deg, #1e3a8a, #1e40af);
+  /* Navy Gradient */
   color: white;
   font-weight: 700;
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
 }
 
 .btn-secondary {
@@ -120,7 +122,25 @@ body.light-theme .btn-primary {
 /* Light theme secondary button */
 body.light-theme .btn-secondary:hover {
   background: white;
-  color: #667eea;
+  color: #1e3a8a;
+}
+
+
+.hero-license {
+  font-size: 1.1rem;
+  margin-top: -1.5rem;
+  /* Pull it up closer to subtitle */
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.hero-codes {
+  font-size: 1rem;
+  opacity: 0.8;
+  font-family: monospace;
+  margin-top: 0.25rem;
+  display: inline-block;
 }
 
 @media (max-width: 768px) {

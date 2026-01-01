@@ -39,7 +39,7 @@ const Footer = () => {
               <For each={t().services.items}>
                 {(service) => (
                   <li>
-                    <A href={`/servicios#${service.id || ''}`} class="footer-link-item">
+                    <A href={`/${language()}/servicios#${service.id || ''}`} class="footer-link-item">
                       {service.title}
                     </A>
                   </li>
@@ -51,11 +51,11 @@ const Footer = () => {
           <div class="footer-section">
             <h4>{t().footer.links.information || 'Información'}</h4>
             <ul class="footer-links">
-              <li><A href="/sobre-nosotros" class="footer-link-item">{t().footer.links.about}</A></li>
-              <li><A href="/contacto" class="footer-link-item">{t().footer.links.contact}</A></li>
-              <li><A href="/privacy" class="footer-link-item">{t().footer.links.privacy}</A></li>
-              <li><A href="/terms" class="footer-link-item">{t().footer.links.terms}</A></li>
-              <li><A href="/legal" class="footer-link-item">{t().footer.links.legal}</A></li>
+              <li><A href={`/${language()}/sobre-nosotros`} class="footer-link-item">{t().footer.links.about}</A></li>
+              <li><A href={`/${language()}/contacto`} class="footer-link-item">{t().footer.links.contact}</A></li>
+              <li><A href={`/${language()}/privacy`} class="footer-link-item">{t().footer.links.privacy}</A></li>
+              <li><A href={`/${language()}/terms`} class="footer-link-item">{t().footer.links.terms}</A></li>
+              <li><A href={`/${language()}/legal`} class="footer-link-item">{t().footer.links.legal}</A></li>
             </ul>
           </div>
 

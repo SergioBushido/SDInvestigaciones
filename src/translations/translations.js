@@ -10,6 +10,8 @@ export const translations = {
       title: 'Agencia de Detectives Privados en Tenerife',
       titleHighlight: 'SD Investigaciones',
       subtitle: 'Especialistas en investigaciones familiares, laborales y mercantiles',
+      license: 'Habilitada por el Ministerio del Interior.',
+      codes: 'RNSP: 11.582 | TIP: 6.091',
       features: {
         confidencial: '100% Confidencial',
         rapidos: 'Resultados Rápidos',
@@ -307,6 +309,8 @@ export const translations = {
       title: 'Private Detective Agency in Tenerife',
       titleHighlight: 'SD Investigations',
       subtitle: 'Specialists in family, corporate, and financial investigations',
+      license: 'Licensed by the Ministry of the Interior.',
+      codes: 'RNSP: 11.582 | TIP: 6.091',
       features: {
         confidencial: '100% Confidential',
         rapidos: 'Quick Results',
@@ -604,6 +608,8 @@ export const translations = {
       title: 'Privatdetektei auf Teneriffa',
       titleHighlight: 'SD Ermittlungen',
       subtitle: 'Spezialisten für Familien-, Arbeits- und Wirtschaftsermittlungen',
+      license: 'Vom Innenministerium zugelassen.',
+      codes: 'RNSP: 11.582 | TIP: 6.091',
       features: {
         confidencial: '100% Vertraulich',
         rapidos: 'Schnelle Ergebnisse',
@@ -628,7 +634,7 @@ export const translations = {
           id: 'people',
           title: 'Personensuche',
           description: 'Wir lokalisieren vermisste Personen oder solche, über die Sie Informationen benötigen.',
-          features: ['Erschöpfende Suche', 'Identitätsüberprüfung', 'Vollständige Berichte']
+          features: ['Intensive Suche', 'Identitätsüberprüfung', 'Vollständige Berichte']
         },
         {
           id: 'corporate',
@@ -652,7 +658,7 @@ export const translations = {
           id: 'insurance',
           title: 'Versicherungsermittlung',
           description: 'Wir überprüfen Versicherungsansprüche, um Betrug zu erkennen.',
-          features: ['Anspruchsanalyse', 'Schadensüberprüfung', 'Berichte für Versicherer']
+          features: ['Anspruchsanalyse', 'Schadensüberprüfung', 'Berichte für die Versicherer']
         }
       ],
       cta: {

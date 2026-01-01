@@ -6,15 +6,20 @@ import Layout           from './components/Layout/Layout';
 import App              from './App';
 import './index.css';
 
+const Root = (props) => (
+  <AppProvider>
+    <Layout>
+      {props.children}
+    </Layout>
+  </AppProvider>
+);
+
 render(
   () => (
     <MetaProvider>
-      <AppProvider>
-        {/* Router único de la app, usando Layout como root (Header + Footer) */}
-        <Router root={Layout}>
-          <App />
-        </Router>
-      </AppProvider>
+      <Router root={Root}>
+        <App />
+      </Router>
     </MetaProvider>
   ),
   document.getElementById('root')

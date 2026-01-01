@@ -27,27 +27,19 @@ const Services = () => {
     if (contactEl) {
       contactEl.scrollIntoView({ behavior: 'smooth' });
     } else {
-      navigate('/contacto');
+      navigate(`/${language()}/contacto`);
     }
   };
 
   const iconComponents = [
-    <Icons.Search size="32" color="#9ca3af" />,
-    <Icons.Users size="32" color="#9ca3af" />,
-    <Icons.Building size="32" color="#9ca3af" />,
-    <Icons.DollarSign size="32" color="#9ca3af" />,
-    <Icons.Smartphone size="32" color="#9ca3af" />,
-    <Icons.Shield size="32" color="#9ca3af" />
+    <Icons.Search size="32" color="currentColor" />,
+    <Icons.Users size="32" color="currentColor" />,
+    <Icons.Building size="32" color="currentColor" />,
+    <Icons.DollarSign size="32" color="currentColor" />,
+    <Icons.Smartphone size="32" color="currentColor" />,
+    <Icons.Shield size="32" color="currentColor" />
   ];
 
-  // const serviceImages = [
-  //   '/images/services/infidelity.png',
-  //   '/images/services/person.png',
-  //   '/images/services/corporate.png',
-  //   '/images/services/financial.png',
-  //   '/images/services/electronic.png',
-  //   '/images/services/insurance.png'
-  // ];
 
   return (
     <section id="servicios" class="services">
@@ -64,7 +56,6 @@ const Services = () => {
                 id={service.id}
                 class="service-card"
                 style={{
-                //  'background-image': `url(${serviceImages[index() % serviceImages.length]})`
                 }}
               >
                 <div class="service-card-overlay" />

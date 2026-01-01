@@ -127,7 +127,10 @@
 /* Luna - Azul/Blanco */
 .theme-toggle svg:not(:has(circle)) {
   stroke: #60a5fa;
-  fill: #93c5fd;
+  fill: transparent;
+  /* "Fina" - Outline only */
+  stroke-width: 1.5px;
+  /* Thinner stroke */
 }
 
 .theme-toggle:hover {

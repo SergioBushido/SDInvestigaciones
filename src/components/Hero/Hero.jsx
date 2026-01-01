@@ -12,7 +12,7 @@ const Hero = () => {
     <section id="inicio" class="hero">
       <div class="hero-underlay" />
       <img 
-        src="/hero-bg.avif"
+        src="/hero-bg.avif?v=2"
         alt="Agencia de Detectives en Tenerife" 
         class="hero-bg-image"
         fetchpriority="high"
@@ -27,6 +27,11 @@ const Hero = () => {
           <span class="highlight">{t().hero.titleHighlight}</span>
         </h1>
         <h2>{t().hero.subtitle}</h2>
+        <p class="hero-license">
+          {t().hero.license}
+          <br />
+          <span class="hero-codes">{t().hero.codes}</span>
+        </p>
         
         <div class="hero-buttons">
           <button onClick={() => {

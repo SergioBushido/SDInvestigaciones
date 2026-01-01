@@ -9,8 +9,9 @@
 }
 
 body.light-theme .services {
-  background: #f8f9fa;
-  color: #333;
+  background: #f3f4f6;
+  /* Soft gray/white background */
+  color: #1f2937;
 }
 
 /* =====================================================
@@ -96,6 +97,19 @@ body.light-theme .section-title {
   scroll-margin-top: 100px;
 }
 
+/* Light Theme Card */
+body.light-theme .service-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme .service-card::before {
+  background: none;
+  /* Remove dark overlay */
+  content: none;
+}
+
 /* 🔥 OVERLAY REAL (el que da el estilo) */
 .service-card::before {
   content: "";
@@ -159,12 +173,24 @@ body.light-theme .section-title {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
+body.light-theme .service-title {
+  color: #111827;
+  /* Dark text */
+  text-shadow: none;
+}
+
 .service-description {
   margin-bottom: 1.5rem;
   opacity: 0.95;
   line-height: 1.6;
   color: #ffffff;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+body.light-theme .service-description {
+  color: #4b5563;
+  /* Gray text */
+  text-shadow: none;
 }
 
 /* =====================================================
@@ -186,12 +212,22 @@ body.light-theme .section-title {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
+body.light-theme .service-features li {
+  color: #374151;
+  /* Dark text for features */
+  text-shadow: none;
+}
+
 .service-features li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #667eea;
   font-weight: bold;
+}
+
+body.light-theme .service-features li::before {
+  color: #1e40af;
+  /* Navy checkmark */
 }
 
 /* =====================================================
