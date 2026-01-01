@@ -7,8 +7,11 @@ import Contact   from './pages/Contact';
 import Privacy   from './pages/Privacy';
 import Terms     from './pages/Terms';
 import Legal     from './pages/Legal';
+import DetectivesTenerife from './pages/DetectivesTenerife';
+import PrecioDetectives from './pages/PrecioDetectives';
+import AgenciaInvestigacion from './pages/AgenciaInvestigacion';
 import { useAppContext } from './context/AppContext';
-import Head from './components/Seo/Head';
+
 
 /*
  * Root Redirector
@@ -41,10 +44,8 @@ const RootRedirect = () => {
 const LangWrapper = (props) => {
   // We can add validation logic here if needed
   // For now, it just renders the children (the page)
-  // Head is included here so it updates with route changes
   return (
     <>
-      <Head />
       {props.children}
     </>
   );
@@ -56,9 +57,13 @@ const LangWrapper = (props) => {
  */
 const App = () => (
   <>
+    {/* SEO Landing Pages (Root level) */}
+
+
     {/* Redirección automática de la raíz a /es, /en, etc. */}
     <Route path="/" component={RootRedirect} />
 
+    {/* Rutas con idioma */}
     {/* Rutas con idioma */}
     <Route path="/:lang" component={LangWrapper}>
       <Route path="/"               component={Home}     />
@@ -69,9 +74,20 @@ const App = () => (
       <Route path="/terms"          component={Terms}    />
       <Route path="/legal"          component={Legal}    />
       
+      {/* SEO Landing Pages (Localized) */}
+      <Route path="detectives-privados-tenerife"           component={DetectivesTenerife} />
+      <Route path="precio-detective-privado-tenerife"      component={PrecioDetectives} />
+      <Route path="agencia-investigacion-privada-tenerife" component={AgenciaInvestigacion} />
+      
       {/* Catch-all dentro de idioma? Ojo con duplicados */}
       {/* <Route path="*404" component={NotFound} /> */} 
     </Route>
+
+    {/* Redirects for legacy/root SEO paths to default language (or detection logic if RootRedirect handles it) */}
+    {/* Re-using RootRedirect logic for these specific paths might requires a wrapper or just simple redirect to /es for now as safe default */}
+    <Route path="/detectives-privados-tenerife"           component={() => <Navigate href="/es/detectives-privados-tenerife" />} />
+    <Route path="/precio-detective-privado-tenerife"      component={() => <Navigate href="/es/precio-detective-privado-tenerife" />} />
+    <Route path="/agencia-investigacion-privada-tenerife" component={() => <Navigate href="/es/agencia-investigacion-privada-tenerife" />} />
   </>
 );
 

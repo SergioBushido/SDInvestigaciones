@@ -296,6 +296,99 @@ export const translations = {
           }
         }
       }
+    },
+    seoLinks: {
+      title: '¿Buscas información específica?',
+      detectives: 'Detectives privados en Tenerife',
+      price: 'Precio de un detective privado',
+      agency: 'Agencia de investigación privada'
+    },
+    pricePage: {
+      seoTitle: 'Precio Detective Privado Tenerife | Tarifas y Presupuestos',
+      seoDesc: '¿Cuánto cuesta un detective privado en Tenerife? Consulta nuestros precios y factores que influyen en las tarifas. Presupuesto sin compromiso.',
+      h1: 'Precio de un Detective Privado en Tenerife',
+      intro: 'Entendemos que el coste es un factor importante. Aquí explicamos cómo se calculan nuestros honorarios.',
+      factorsTitle: 'Factores que influyen en el precio',
+      factorsList: ['Complejidad de la investigación', 'Horas de vigilancia requeridas', 'Recursos técnicos necesarios', 'Desplazamientos'],
+      rangesTitle: 'Rangos Orientativos',
+      rangesText: 'Cada caso es único, pero ofrecemos tarifas competitivas ajustadas a las necesidades reales de la investigación.',
+      content: {
+        title: '¿Es rentable contratar un detective privado?',
+        p1: 'A menudo, el coste de un detective privado se percibe como un gasto, cuando en realidad es una <strong>inversión estratégica</strong>. Pensemos en una pensión compensatoria injusta, una baja laboral fraudulenta que cuesta miles de euros a tu empresa o una competencia desleal que roba clientes.',
+        p2: 'El informe de un detective proporciona la <strong>fuerza probatoria</strong> necesaria para ganar un juicio o negociar un acuerdo favorable. En términos económicos, demostrar una realidad oculta puede suponer un ahorro de decenas de miles de euros a largo plazo. En <strong>SD Investigaciones</strong>, optimizamos los recursos para que obtengas la máxima información con el coste justo, sin horas innecesarias ni gastos superfluos.'
+      },
+      faq: {
+        title: 'Preguntas Frecuentes',
+        items: [
+          { q: '¿Cuánto cuesta contratar un detective por un día?', a: 'Las tarifas suelen establecerse por horas o jornadas (con un mínimo de horas, habitualmente 4 o 5). Depende de festivos, nocturnidad y número de detectives necesarios.' },
+          { q: '¿La consulta inicial es gratuita?', a: 'Sí. Estudiamos tu caso sin compromiso para decirte si es viable investigarlo legalmente y darte un presupuesto cerrado.' },
+          { q: '¿Cuáles son las formas de pago?', a: 'Solicitamos una provisión de fondos antes de iniciar. El resto se abona al finalizar y entregar el informe con las pruebas.' }
+        ]
+      },
+      cta: {
+        title: 'Pide tu presupuesto personalizado',
+        button: 'Solicitar Presupuesto'
+      }
+    },
+    agencyPage: {
+      seoTitle: 'Agencia de Investigación Privada en Tenerife | Legal y Segura',
+      seoDesc: 'Agencia de investigación privada en Tenerife legalmente habilitada (TIP 6.091). Garantía de validez judicial y máxima confidencialidad.',
+      h1: 'Agencia de Investigación Privada en Tenerife',
+      intro: 'Somos una agencia de detectives debidamente habilitada por el Ministerio del Interior.',
+      legalTitle: 'Legalidad y Garantías',
+      legalList: ['TIP: 6.091', 'RNSP: 11.582', 'Pruebas con plena validez judicial'],
+      expTitle: 'Experiencia y Confidencialidad',
+      expText: 'Nuestro equipo actúa con el máximo rigor y discreción. Cumplimos estrictamente con la normativa de seguridad privada.',
+      content: {
+        title: 'Garantía de Legalidad: ¿Por qué exigir el TIP?',
+        p1: 'En España, la investigación privada es una actividad regulada y exclusiva de los <strong>Detectives Privados habilitados</strong>. Contratar a un "investigador" sin licencia (TIP) no solo es una pérdida de dinero, sino que puede tener graves consecuencias legales para el cliente, incluyendo la nulidad de las pruebas y sanciones administrativas.',
+        p2: '<strong>SD Investigaciones</strong> opera con la licencia <strong>TIP 6.091</strong> y número de registro <strong>RNSP 11.582</strong>. Esto garantiza que operamos dentro del marco de la ley, respetando los derechos fundamentales. Nuestros informes son ratificados en sede judicial, convirtiéndose en una herramienta fundamental para abogados y tribunales. No arriesgues tu caso: exige siempre la acreditación profesional.'
+      },
+      faq: {
+        title: 'Preguntas Frecuentes sobre la Agencia',
+        items: [
+          { q: '¿Qué es el TIP?', a: 'Es la Tarjeta de Identidad Profesional. Garantiza que el detective tiene la formación universitaria y la habilitación del Ministerio del Interior.' },
+          { q: '¿Existe secreto profesional?', a: 'Sí, absoluto. Protegemos la identidad de nuestros clientes y los datos obtenidos durante la investigación con total rigor.' },
+          { q: '¿Trabajan solo en Tenerife?', a: 'Principalmente en Tenerife, pero podemos desplazarnos a otras islas o coordinarnos para investigaciones de ámbito más amplio.' }
+        ]
+      },
+      cta: {
+        title: 'Habla con un profesional',
+        button: 'Consulta Gratuita'
+      }
+    },
+    detectivesPage: {
+      seoTitle: 'Detectives Privados en Tenerife | SD Investigaciones',
+      seoDesc: 'Servicios de detective privado en Tenerife. Investigación de infidelidades, bajas laborales y localización de personas. Consulta gratuita.',
+      h1: 'Detectives Privados en Tenerife',
+      intro: 'Expertos en investigación privada con licencia oficial. Ofrecemos soluciones discretas y eficaces.',
+      servicesTitle: 'Nuestros Servicios',
+      servicesList: [
+        'Investigación de infidelidades',
+        'Bajas laborales fraudulentas',
+        'Localización de personas',
+        'Barridos electrónicos'
+      ],
+      whyChooseTitle: '¿Por qué elegirnos?',
+      whyChooseText: 'Contamos con años de experiencia y tecnología de vanguardia para obtener las pruebas que necesitas.',
+      content: {
+        title: '¿Cuándo contratar un detective privado en Tenerife?',
+        p1: 'Contratar un detective privado es una decisión clave cuando necesitas <strong>pruebas legales, verificables y contundentes</strong>. No se trata solo de confirmar una sospecha, sino de obtener material probatorio que pueda ser utilizado en un proceso judicial o toma de decisiones crítica.',
+        p2: 'En <strong>SD Investigaciones</strong>, recomendamos acudir a un profesional cuando te enfrentas a situaciones de incertidumbre que afectan a tu patrimonio, familia o empresa. Ya sea una posible <strong>infidelidad</strong> que derivará en un divorcio contencioso, una <strong>baja laboral fingida</strong> que está dañando la economía de tu negocio, o la necesidad de localizar a una persona para notificaciones judiciales.',
+        p3: 'Nuestra labor se rige por la estricta confidencialidad y el cumplimiento de la Ley de Seguridad Privada. Al contratarnos, te aseguras de que la información se obtiene de manera lícita, garantizando que las pruebas no serán impugnadas en el juzgado. Actuamos en toda la isla de Tenerife, con conocimiento profundo del entorno local.'
+      },
+      faq: {
+        title: 'Preguntas Frecuentes sobre Detectives',
+        items: [
+          { q: '¿Es legal contratar un detective privado?', a: 'Sí, siempre que tengas un interés legítimo (relación familiar, laboral o contractual). Somos profesionales habilitados por el Ministerio del Interior.' },
+          { q: '¿Las pruebas sirven en un juicio?', a: 'Sí, el informe del detective privado tiene carácter de testimonio cualificado y prueba documental. Ratificamos en los juzgados de Tenerife.' },
+          { q: '¿Cuánto tardan en empezar?', a: 'Generalmente podemos iniciar la investigación en 24-48 horas tras la formalización del encargo, adaptándonos a la urgencia del caso.' }
+        ]
+      },
+      cta: {
+        title: 'Solicita tu consulta gratuita',
+        button: 'Contactar ahora'
+      }
     }
   },
   en: {
@@ -595,6 +688,99 @@ export const translations = {
           }
         }
       }
+    },
+    seoLinks: {
+      title: 'Looking for specific information?',
+      detectives: 'Private detectives in Tenerife',
+      price: 'Price of a private detective',
+      agency: 'Private investigation agency'
+    },
+    pricePage: {
+      seoTitle: 'Private Detective Price Tenerife | Rates and Budgets',
+      seoDesc: 'How much does a private detective cost in Tenerife? Check our prices and factors influencing rates. No-obligation quote.',
+      h1: 'Price of a Private Detective in Tenerife',
+      intro: 'We understand that cost is an important factor. Here we explain how our fees are calculated.',
+      factorsTitle: 'Factors influencing the price',
+      factorsList: ['Investigation complexity', 'Surveillance hours required', 'Technical resources needed', 'Travel expenses'],
+      rangesTitle: 'Indicative Ranges',
+      rangesText: 'Each case is unique, but we offer competitive rates adjusted to the real needs of the investigation.',
+      content: {
+        title: 'Is it profitable to hire a private detective?',
+        p1: 'Often, the cost of a private detective is perceived as an expense, when in reality it is a <strong>strategic investment</strong>. Think of an unfair compensatory pension, a fraudulent sick leave costing your company thousands of euros, or unfair competition stealing clients.',
+        p2: 'A detective\'s report provides the <strong>probative force</strong> necessary to win a lawsuit or negotiate a favorable agreement. In economic terms, proving a hidden reality can save tens of thousands of euros in the long run. At <strong>SD Investigations</strong>, we optimize resources so you get maximum information at a fair cost, without unnecessary hours or superfluous expenses.'
+      },
+      faq: {
+        title: 'Frequently Asked Questions',
+        items: [
+          { q: 'How much does it cost to hire a detective for a day?', a: 'Rates are usually set by hours or days (with a minimum of hours, usually 4 or 5). It depends on holidays, night hours, and number of detectives needed.' },
+          { q: 'Is the initial consultation free?', a: 'Yes. We study your case without obligation to tell you if it is viable to investigate legally and give you a closed budget.' },
+          { q: 'What are the payment methods?', a: 'We request a provision of funds before starting. The rest is paid upon completion and delivery of the report with the evidence.' }
+        ]
+      },
+      cta: {
+        title: 'Request your personalized quote',
+        button: 'Request Quote'
+      }
+    },
+    agencyPage: {
+      seoTitle: 'Private Investigation Agency in Tenerife | Legal and Safe',
+      seoDesc: 'Legally authorized private investigation agency in Tenerife (TIP 6.091). Guarantee of judicial validity and maximum confidentiality.',
+      h1: 'Private Investigation Agency in Tenerife',
+      intro: 'We are a detective agency duly authorized by the Ministry of the Interior.',
+      legalTitle: 'Legality and Guarantees',
+      legalList: ['TIP: 6.091', 'RNSP: 11.582', 'Evidence with full judicial validity'],
+      expTitle: 'Experience and Confidentiality',
+      expText: 'Our team acts with maximum rigor and discretion. We strictly comply with private security regulations.',
+      content: {
+        title: 'Guarantee of Legality: Why demand the TIP?',
+        p1: 'In Spain, private investigation is a regulated activity exclusive to <strong>licensed Private Detectives</strong>. Hiring a "researcher" without a license (TIP) is not only a waste of money but can have serious legal consequences for the client, including nullity of evidence and administrative sanctions.',
+        p2: '<strong>SD Investigations</strong> operates with license <strong>TIP 6.091</strong> and registration number <strong>RNSP 11.582</strong>. This guarantees that we operate within the framework of the law, respecting fundamental rights. Our reports are ratified in court, becoming a fundamental tool for lawyers and courts. Do not risk your case: always demand professional accreditation.'
+      },
+      faq: {
+        title: 'Frequently Asked Questions about the Agency',
+        items: [
+          { q: 'What is the TIP?', a: 'It is the Professional Identity Card. It guarantees that the detective has university training and authorization from the Ministry of the Interior.' },
+          { q: 'Is there professional secrecy?', a: 'Yes, absolute. We protect the identity of our clients and the data obtained during the investigation with total rigor.' },
+          { q: 'Do you work only in Tenerife?', a: 'Mainly in Tenerife, but we can travel to other islands or coordinate for broader investigations.' }
+        ]
+      },
+      cta: {
+        title: 'Talk to a professional',
+        button: 'Free Consultation'
+      }
+    },
+    detectivesPage: {
+      seoTitle: 'Private Detectives in Tenerife | SD Investigations',
+      seoDesc: 'Private detective services in Tenerife. Infidelity investigation, sick leave fraud and people location. Free consultation.',
+      h1: 'Private Detectives in Tenerife',
+      intro: 'Experts in private investigation with official license. We offer discreet and effective solutions.',
+      servicesTitle: 'Our Services',
+      servicesList: [
+        'Infidelity investigation',
+        'Fraudulent sick leaves',
+        'People location',
+        'Electronic sweeps'
+      ],
+      whyChooseTitle: 'Why choose us?',
+      whyChooseText: 'We have years of experience and cutting-edge technology to obtain the evidence you need.',
+      content: {
+        title: 'When to hire a private detective in Tenerife?',
+        p1: 'Hiring a private detective is a key decision when you need <strong>legal, verifiable and solid evidence</strong>. It is not just about confirming a suspicion, but obtaining evidentiary material that can be used in a judicial process or critical decision making.',
+        p2: 'At <strong>SD Investigations</strong>, we recommend going to a professional when you face situations of uncertainty that affect your assets, family or business. Whether it is a possible <strong>infidelity</strong> that will lead to a contentious divorce, a <strong>faked sick leave</strong> that is damaging your business economy, or the need to locate a person for judicial notifications.',
+        p3: 'Our work is governed by strict confidentiality and compliance with the Private Security Law. By hiring us, you ensure that the information is obtained legally, guaranteeing that the evidence will not be challenged in court. We act throughout the island of Tenerife, with deep knowledge of the local environment.'
+      },
+      faq: {
+        title: 'Frequently Asked Questions about Detectives',
+        items: [
+          { q: 'Is it legal to hire a private detective?', a: 'Yes, provided you have a legitimate interest (family, work or contractual relationship). We are professionals licensed by the Ministry of the Interior.' },
+          { q: 'Is the evidence valid in court?', a: 'Yes, the private detective\'s report has the character of qualified testimony and documentary evidence. We ratify in the courts of Tenerife.' },
+          { q: 'How long does it take to start?', a: 'We can generally start the investigation within 24-48 hours after the formalization of the assignment, adapting to the urgency of the case.' }
+        ]
+      },
+      cta: {
+        title: 'Request your free consultation',
+        button: 'Contact now'
+      }
     }
   },
   de: {
@@ -618,6 +804,39 @@ export const translations = {
       buttons: {
         consulta: 'Kostenlose Beratung',
         servicios: 'Dienstleistungen ansehen'
+      }
+    },
+    detectivesPage: {
+      seoTitle: 'Privatdetektive auf Teneriffa | SD Ermittlungen',
+      seoDesc: 'Privatdetektivdienste auf Teneriffa. Untreueuntersuchung, betrügerische Krankschreibungen und Personensuche. Kostenlose Beratung.',
+      h1: 'Privatdetektive auf Teneriffa',
+      intro: 'Experten für private Ermittlungen mit offizieller Lizenz. Wir bieten diskrete und effektive Lösungen.',
+      servicesTitle: 'Unsere Dienstleistungen',
+      servicesList: [
+        'Untreueuntersuchung',
+        'Betrügerische Krankschreibungen',
+        'Personensuche',
+        'Elektronische Überwachung'
+      ],
+      whyChooseTitle: 'Warum uns wählen?',
+      whyChooseText: 'Wir verfügen über jahrelange Erfahrung und modernste Technologie, um die Beweise zu erhalten, die Sie benötigen.',
+      content: {
+        title: 'Wann einen Privatdetektiv auf Teneriffa beauftragen?',
+        p1: 'Die Beauftragung eines Privatdetektivs ist eine wichtige Entscheidung, wenn Sie <strong>legale, überprüfbare und stichhaltige Beweise</strong> benötigen. Es geht nicht nur darum, einen Verdacht zu bestätigen, sondern Beweismaterial zu erhalten, das in einem Gerichtsverfahren oder bei einer kritischen Entscheidungsfindung verwendet werden kann.',
+        p2: 'Bei <strong>SD Ermittlungen</strong> empfehlen wir, einen Fachmann aufzusuchen, wenn Sie mit Situationen der Unsicherheit konfrontiert sind, die Ihr Vermögen, Ihre Familie oder Ihr Unternehmen betreffen. Sei es eine mögliche <strong>Untreue</strong>, die zu einer strittigen Scheidung führt, eine <strong>vorgetäuschte Krankschreibung</strong>, die der Wirtschaft Ihres Unternehmens schadet, oder die Notwendigkeit, eine Person für gerichtliche Benachrichtigungen ausfindig zu machen.',
+        p3: 'Unsere Arbeit unterliegt strenger Vertraulichkeit und der Einhaltung des Gesetzes über private Sicherheit. Wenn Sie uns beauftragen, stellen Sie sicher, dass die Informationen rechtmäßig erlangt werden und dass die Beweise vor Gericht nicht angefochten werden. Wir sind auf der gesamten Insel Teneriffa tätig und verfügen über fundierte Kenntnisse der lokalen Umgebung.'
+      },
+      faq: {
+        title: 'Häufig gestellte Fragen zu Detektiven',
+        items: [
+          { q: 'Ist es legal, einen Privatdetektiv zu beauftragen?', a: 'Ja, sofern Sie ein berechtigtes Interesse haben (familiäre, arbeitsrechtliche oder vertragliche Beziehung). Wir sind vom Innenministerium zugelassene Fachleute.' },
+          { q: 'Sind die Beweise vor Gericht gültig?', a: 'Ja, der Bericht des Privatdetektivs hat den Charakter einer qualifizierten Zeugenaussage und eines Dokumentenbeweises. Wir ratifizieren vor den Gerichten von Teneriffa.' },
+          { q: 'Wie lange dauert es, bis wir anfangen?', a: 'Im Allgemeinen können wir die Untersuchung innerhalb von 24-48 Stunden nach Formalisierung des Auftrags beginnen und uns an die Dringlichkeit des Falls anpassen.' }
+        ]
+      },
+      cta: {
+        title: 'Fordern Sie Ihre kostenlose Beratung an',
+        button: 'Jetzt kontaktieren'
       }
     },
     services: {
@@ -893,6 +1112,99 @@ export const translations = {
             content: 'Die Tätigkeit als Privatdetektiv ist in Spanien durch das Gesetz 5/2014 über private Sicherheit und die Verordnung über private Sicherheit geregelt. SD INVESTIGACIONES verfügt über alle erforderlichen Genehmigungen, die vom Innenministerium (Generaldirektion der Polizei) ausgestellt wurden.'
           }
         }
+      }
+    },
+    seoLinks: {
+      title: 'Suchen Sie nach spezifischen Informationen?',
+      detectives: 'Privatdetektive auf Teneriffa',
+      price: 'Preis eines Privatdetektivs',
+      agency: 'Privatermittlungsagentur'
+    },
+    pricePage: {
+      seoTitle: 'Preis Privatdetektiv Teneriffa | Tarife und Kostenvoranschläge',
+      seoDesc: 'Wie viel kostet ein Privatdetektiv auf Teneriffa? Informieren Sie sich über unsere Preise und Faktoren, die die Tarife beeinflussen. Unverbindlicher Kostenvoranschlag.',
+      h1: 'Preis eines Privatdetektivs auf Teneriffa',
+      intro: 'Wir verstehen, dass die Kosten ein wichtiger Faktor sind. Hier erklären wir, wie sich unsere Honorare zusammensetzen.',
+      factorsTitle: 'Faktoren, die den Preis beeinflussen',
+      factorsList: ['Komplexität der Untersuchung', 'Erforderliche Überwachungsstunden', 'Erforderliche technische Ressourcen', 'Reisekosten'],
+      rangesTitle: 'Richtwerte',
+      rangesText: 'Jeder Fall ist einzigartig, aber wir bieten wettbewerbsfähige Preise, die an die tatsächlichen Bedürfnisse der Untersuchung angepasst sind.',
+      content: {
+        title: 'Lohnt es sich, einen Privatdetektiv zu beauftragen?',
+        p1: 'Oft werden die Kosten für einen Privatdetektiv als Ausgabe wahrgenommen, obwohl es sich eigentlich um eine <strong>strategische Investition</strong> handelt. Denken Sie an eine ungerechte Unterhaltszahlung, eine betrügerische Krankschreibung, die Ihr Unternehmen Tausende von Euro kostet, oder unlauteren Wettbewerb, der Kunden stiehlt.',
+        p2: 'Der Bericht eines Detektivs liefert die notwendige <strong>Beweiskraft</strong>, um einen Prozess zu gewinnen oder eine günstige Einigung auszuhandeln. Wirtschaftlich gesehen kann der Nachweis einer verborgenen Realität langfristig Zehntausende von Euro sparen. Bei <strong>SD Ermittlungen</strong> optimieren wir die Ressourcen, damit Sie maximale Informationen zu fairen Kosten erhalten, ohne unnötige Stunden oder überflüssige Ausgaben.'
+      },
+      faq: {
+        title: 'Häufig gestellte Fragen',
+        items: [
+          { q: 'Wie viel kostet es, einen Detektiv für einen Tag zu beauftragen?', a: 'Die Tarife werden in der Regel nach Stunden oder Tagen festgelegt (mit einer Mindestanzahl von Stunden, normalerweise 4 oder 5). Dies hängt von Feiertagen, Nachtstunden und der Anzahl der benötigten Detektive ab.' },
+          { q: 'Ist die Erstberatung kostenlos?', a: 'Ja. Wir prüfen Ihren Fall unverbindlich, um Ihnen mitzuteilen, ob eine legale Untersuchung möglich ist, und geben Ihnen einen Festpreis.' },
+          { q: 'Welche Zahlungsmethoden gibt es?', a: 'Wir fordern eine Anzahlung vor Beginn an. Der Rest wird bei Abschluss und Übergabe des Berichts mit den Beweisen bezahlt.' }
+        ]
+      },
+      cta: {
+        title: 'Fordern Sie Ihren persönlichen Kostenvoranschlag an',
+        button: 'Kostenvoranschlag anfordern'
+      }
+    },
+    agencyPage: {
+      seoTitle: 'Privatdetektei auf Teneriffa | Legal und Sicher',
+      seoDesc: 'Rechtlich zugelassene Privatdetektei auf Teneriffa (TIP 6.091). Garantie für gerichtliche Gültigkeit und maximale Vertraulichkeit.',
+      h1: 'Privatdetektei auf Teneriffa',
+      intro: 'Wir sind eine vom Innenministerium ordnungsgemäß zugelassene Detektei.',
+      legalTitle: 'Rechtmäßigkeit und Garantien',
+      legalList: ['TIP: 6.091', 'RNSP: 11.582', 'Beweise mit voller gerichtlicher Gültigkeit'],
+      expTitle: 'Erfahrung und Vertraulichkeit',
+      expText: 'Unser Team handelt mit größter Sorgfalt und Diskretion. Wir halten uns strikt an die Sicherheitsvorschriften.',
+      content: {
+        title: 'Garantie der Rechtmäßigkeit: Warum den TIP verlangen?',
+        p1: 'In Spanien ist die private Ermittlung eine regulierte Tätigkeit, die ausschließlich <strong>zugelassenen Privatdetektiven</strong> vorbehalten ist. Die Beauftragung eines "Ermittlers" ohne Lizenz (TIP) ist nicht nur Geldverschwendung, sondern kann auch schwerwiegende rechtliche Konsequenzen für den Kunden haben, einschließlich der Nichtigkeit der Beweise und verwaltungsrechtlicher Sanktionen.',
+        p2: '<strong>SD Ermittlungen</strong> arbeitet mit der Lizenz <strong>TIP 6.091</strong> und der Registrierungsnummer <strong>RNSP 11.582</strong>. Dies garantiert, dass wir im Rahmen des Gesetzes arbeiten und die Grundrechte respektieren. Unsere Berichte werden vor Gericht ratifiziert und werden zu einem grundlegenden Werkzeug für Anwälte und Gerichte. Riskieren Sie nicht Ihren Fall: verlangen Sie immer die berufliche Akkreditierung.'
+      },
+      faq: {
+        title: 'Häufig gestellte Fragen zur Agentur',
+        items: [
+          { q: 'Was ist der TIP?', a: 'Das ist der Berufsausweis. Er garantiert, dass der Detektiv eine universitäre Ausbildung und die Zulassung des Innenministeriums hat.' },
+          { q: 'Gibt es eine Schweigepflicht?', a: 'Ja, absolut. Wir schützen die Identität unserer Kunden und die während der Untersuchung gewonnenen Daten mit strengster Sorgfalt.' },
+          { q: 'Arbeiten Sie nur auf Teneriffa?', a: 'Hauptsächlich auf Teneriffa, aber wir können auf andere Inseln reisen oder uns für umfassendere Untersuchungen koordinieren.' }
+        ]
+      },
+      cta: {
+        title: 'Sprechen Sie mit einem Profi',
+        button: 'Kostenlose Beratung'
+      }
+    },
+    detectivesPage: {
+      seoTitle: 'Privatdetektive auf Teneriffa | SD Ermittlungen',
+      seoDesc: 'Privatdetektivdienste auf Teneriffa. Untreueuntersuchung, betrügerische Krankschreibungen und Personensuche. Kostenlose Beratung.',
+      h1: 'Privatdetektive auf Teneriffa',
+      intro: 'Experten für private Ermittlungen mit offizieller Lizenz. Wir bieten diskrete und effektive Lösungen.',
+      servicesTitle: 'Unsere Dienstleistungen',
+      servicesList: [
+        'Untreueuntersuchung',
+        'Betrügerische Krankschreibungen',
+        'Personensuche',
+        'Elektronische Überwachung'
+      ],
+      whyChooseTitle: 'Warum uns wählen?',
+      whyChooseText: 'Wir verfügen über jahrelange Erfahrung und modernste Technologie, um die Beweise zu erhalten, die Sie benötigen.',
+      content: {
+        title: 'Wann einen Privatdetektiv auf Teneriffa beauftragen?',
+        p1: 'Die Beauftragung eines Privatdetektivs ist eine wichtige Entscheidung, wenn Sie <strong>legale, überprüfbare und stichhaltige Beweise</strong> benötigen. Es geht nicht nur darum, einen Verdacht zu bestätigen, sondern Beweismaterial zu erhalten, das in einem Gerichtsverfahren oder bei einer kritischen Entscheidungsfindung verwendet werden kann.',
+        p2: 'Bei <strong>SD Ermittlungen</strong> empfehlen wir, einen Fachmann aufzusuchen, wenn Sie mit Situationen der Unsicherheit konfrontiert sind, die Ihr Vermögen, Ihre Familie oder Ihr Unternehmen betreffen. Sei es eine mögliche <strong>Untreue</strong>, die zu einer strittigen Scheidung führt, eine <strong>vorgetäuschte Krankschreibung</strong>, die der Wirtschaft Ihres Unternehmens schadet, oder die Notwendigkeit, eine Person für gerichtliche Benachrichtigungen ausfindig zu machen.',
+        p3: 'Unsere Arbeit unterliegt strenger Vertraulichkeit und der Einhaltung des Gesetzes über private Sicherheit. Wenn Sie uns beauftragen, stellen Sie sicher, dass die Informationen rechtmäßig erlangt werden und dass die Beweise vor Gericht nicht angefochten werden. Wir sind auf der gesamten Insel Teneriffa tätig und verfügen über fundierte Kenntnisse der lokalen Umgebung.'
+      },
+      faq: {
+        title: 'Häufig gestellte Fragen zu Detektiven',
+        items: [
+          { q: 'Ist es legal, einen Privatdetektiv zu beauftragen?', a: 'Ja, sofern Sie ein berechtigtes Interesse haben (familiäre, arbeitsrechtliche oder vertragliche Beziehung). Wir sind vom Innenministerium zugelassene Fachleute.' },
+          { q: 'Sind die Beweise vor Gericht gültig?', a: 'Ja, der Bericht des Privatdetektivs hat den Charakter einer qualifizierten Zeugenaussage und eines Dokumentenbeweises. Wir ratifizieren vor den Gerichten von Teneriffa.' },
+          { q: 'Wie lange dauert es, bis wir anfangen?', a: 'Im Allgemeinen können wir die Untersuchung innerhalb von 24-48 Stunden nach Formalisierung des Auftrags beginnen und uns an die Dringlichkeit des Falls anpassen.' }
+        ]
+      },
+      cta: {
+        title: 'Fordern Sie Ihre kostenlose Beratung an',
+        button: 'Jetzt kontaktieren'
       }
     }
   }

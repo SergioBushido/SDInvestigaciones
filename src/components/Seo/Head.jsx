@@ -2,6 +2,7 @@ import { Title, Meta, Link } from '@solidjs/meta';
 import { useLocation } from '@solidjs/router';
 import { createMemo } from 'solid-js';
 import { useAppContext } from '../../context/AppContext';
+import { localBusinessSchema } from '../../data/seoSchema';
 
 /**
  * Head Component
@@ -16,50 +17,27 @@ const Head = () => {
 
   // Memoize canonical URL to avoid unnecessary recalculations
   const canonicalUrl = createMemo(() => {
-    // Ensure trailing slash consistency if needed, or remove it. 
-    // Usually standardized to remove trailing slash or keep it.
-    // For this case, we'll construct it based on the current path.
-    const path = location.pathname;
+    let path = location.pathname;
+    // Normalize: remove trailing slash if not root
+    if (path !== '/' && path.endsWith('/')) {
+      path = path.slice(0, -1);
+    }
     return `${siteUrl}${path}`;
   });
 
-  // Dynamic Structured Data (Schema.org) using the correct URL
-  const schemaData = createMemo(() => ({
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "SD INVESTIGACIONES",
-    "legalName": "SD INVESTIGACIONES - Agencia de Detectives Privados",
-    "taxID": "RNSP 11.582",
-    "license": "6.091",
-    "url": siteUrl,
-    "telephone": "+34643697615",
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Tenerife"
-    },
-    "knowsAbout": [
-      "Investigación de infidelidades",
-      "Bajas laborales",
-      "Localización de personas",
-      "Derecho de familia",
-      "Barridos electrónicos"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+34643697615",
-      "contactType": "customer service",
-      "availableLanguage": ["Spanish", "English", "German"]
-    },
-    "identifier": "RNSP 11.582",
-    "description": "Detective privado en Tenerife con TIP 6.091 y RNSP 11.582. Especialistas en investigaciones familiares y empresariales.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Candelaria",
-      "addressRegion": "Santa Cruz de Tenerife",
-      "postalCode": "38530",
-      "addressCountry": "ES"
+  // Main LocalBusiness Schema - Only render on Home
+  // Detect home paths like '/', '/es/', '/en/'
+  const isHome = createMemo(() => {
+    let path = location.pathname;
+    if (path !== '/' && path.endsWith('/')) {
+      path = path.slice(0, -1);
     }
-  }));
+    return path === '' || path === '/' || path.match(/^\/[a-z]{2}$/);
+  });
+
+  const schemaData = createMemo(() => {
+    return isHome() ? localBusinessSchema : null;
+  });
 
   return (
     <>
@@ -69,12 +47,15 @@ const Head = () => {
       {/* Dynamic Canonical */}
       <Link rel="canonical" href={canonicalUrl()} />
 
-      {/* Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify(schemaData())}
-      </script>
+      {/* Structured Data - Only on Home */}
+      {schemaData() && (
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData())}
+        </script>
+      )}
 
       {/* Open Graph Base */}
+      <Meta property="og:type" content="website" />
       <Meta property="og:url" content={canonicalUrl()} />
       <Meta property="og:site_name" content="SD Investigaciones" />
     </>

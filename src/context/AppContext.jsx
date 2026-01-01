@@ -93,8 +93,10 @@ export const AppProvider = (props) => {
     navigate(newPath);
   };
 
+  const t = () => translations[language()];
+
   return (
-    <AppContext.Provider value={{ isDarkMode, toggleTheme, language, changeLanguage }}>
+    <AppContext.Provider value={{ isDarkMode, toggleTheme, language, changeLanguage, t, lang: language }}>
       {props.children}
     </AppContext.Provider>
   );
