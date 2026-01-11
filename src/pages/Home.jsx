@@ -1,7 +1,8 @@
-import { Title, Meta } from '@solidjs/meta';
+import SEO from '../components/Seo/SEO';
 import { A } from '@solidjs/router';
 import { useAppContext } from '../context/AppContext';
 import { translations } from '../translations/translations';
+import { localBusinessSchema } from '../data/seoSchema';
 import Hero from '../components/Hero/Hero';
 import Services from '../components/Services/Services';
 import About from '../components/About/About';
@@ -12,8 +13,11 @@ const Home = () => {
 
   return (
     <main>
-      <Title>{t().seo.home.title}</Title>
-      <Meta name="description" content={t().seo.home.description} />
+      <SEO 
+        title={t().seo.home.title}
+        description={t().seo.home.description}
+        schema={localBusinessSchema}
+      />
       <Hero />
       <Services />
       <About />

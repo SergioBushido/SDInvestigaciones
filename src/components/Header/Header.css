@@ -146,7 +146,7 @@
   filter: drop-shadow(0 0 12px #60a5fa);
 }
 
-.nav-list button {
+.nav-list a {
   background: none;
   border: none;
   color: #e0e0e0;
@@ -156,9 +156,13 @@
   transition: color 0.3s ease;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  text-decoration: none;
+  /* Remove underline from A tags */
+  display: inline-block;
+  /* Ensure padding works correctly */
 }
 
-.nav-list button:hover {
+.nav-list a:hover {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 }
@@ -243,12 +247,14 @@
     width: 100%;
   }
 
-  .nav-list button {
+  .nav-list a {
     font-size: 1.2rem;
     width: 100%;
     text-align: center;
     padding: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: block;
+    /* Ensure full width clickable area */
   }
 
   /* Keep controls visible but compact */

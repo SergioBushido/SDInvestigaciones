@@ -1,4 +1,4 @@
-import { Title, Meta } from '@solidjs/meta';
+import SEO from '../components/Seo/SEO';
 import { useAppContext } from '../context/AppContext';
 import { translations } from '../translations/translations';
 import Services from '../components/Services/Services';
@@ -9,8 +9,10 @@ const ServicesPage = () => {
 
   return (
     <main>
-      <Title>{t().seo.services.title}</Title>
-      <Meta name="description" content={t().seo.services.description} />
+      <SEO 
+        title={t().seo.services.title}
+        description={t().seo.services.description}
+      />
       <section class="page-header">
         <div class="container">
           <h1>{t().services.pageHeader.title}</h1>

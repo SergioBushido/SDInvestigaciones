@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Español (Default) -->
   <url>
-    <loc>https://www.sdinvestigaciones.com/es/</loc>
+    <loc>https://www.sdinvestigaciones.com/es</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,6 +18,21 @@
   </url>
   <url>
     <loc>https://www.sdinvestigaciones.com/es/contacto</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sdinvestigaciones.com/es/detectives-privados-tenerife</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.sdinvestigaciones.com/es/precio-detective-privado-tenerife</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sdinvestigaciones.com/es/agencia-investigacion-privada-tenerife</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -39,7 +54,7 @@
 
   <!-- English -->
   <url>
-    <loc>https://www.sdinvestigaciones.com/en/</loc>
+    <loc>https://www.sdinvestigaciones.com/en</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -55,6 +70,21 @@
   </url>
   <url>
     <loc>https://www.sdinvestigaciones.com/en/contacto</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sdinvestigaciones.com/en/detectives-privados-tenerife</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.sdinvestigaciones.com/en/precio-detective-privado-tenerife</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sdinvestigaciones.com/en/agencia-investigacion-privada-tenerife</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -76,7 +106,7 @@
 
   <!-- Deutsch -->
   <url>
-    <loc>https://www.sdinvestigaciones.com/de/</loc>
+    <loc>https://www.sdinvestigaciones.com/de</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -92,6 +122,21 @@
   </url>
   <url>
     <loc>https://www.sdinvestigaciones.com/de/contacto</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sdinvestigaciones.com/de/detectives-privados-tenerife</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.sdinvestigaciones.com/de/precio-detective-privado-tenerife</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sdinvestigaciones.com/de/agencia-investigacion-privada-tenerife</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

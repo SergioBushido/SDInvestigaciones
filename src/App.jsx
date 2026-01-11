@@ -10,6 +10,7 @@ import Legal     from './pages/Legal';
 import DetectivesTenerife from './pages/DetectivesTenerife';
 import PrecioDetectives from './pages/PrecioDetectives';
 import AgenciaInvestigacion from './pages/AgenciaInvestigacion';
+import NotFound from './pages/NotFound';
 import { useAppContext } from './context/AppContext';
 
 
@@ -79,8 +80,8 @@ const App = () => (
       <Route path="precio-detective-privado-tenerife"      component={PrecioDetectives} />
       <Route path="agencia-investigacion-privada-tenerife" component={AgenciaInvestigacion} />
       
-      {/* Catch-all dentro de idioma? Ojo con duplicados */}
-      {/* <Route path="*404" component={NotFound} /> */} 
+      {/* Catch-all dentro de idioma */}
+      <Route path="*404" component={NotFound} /> 
     </Route>
 
     {/* Redirects for legacy/root SEO paths to default language (or detection logic if RootRedirect handles it) */}

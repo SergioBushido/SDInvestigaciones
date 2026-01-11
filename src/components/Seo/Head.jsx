@@ -18,10 +18,13 @@ const Head = () => {
   // Memoize canonical URL to avoid unnecessary recalculations
   const canonicalUrl = createMemo(() => {
     let path = location.pathname;
+    
     // Normalize: remove trailing slash if not root
     if (path !== '/' && path.endsWith('/')) {
       path = path.slice(0, -1);
     }
+    
+    // Explicitly return URL without query string
     return `${siteUrl}${path}`;
   });
 

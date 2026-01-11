@@ -1,9 +1,19 @@
-import { Title, Meta, Link } from '@solidjs/meta';
+import SEO from '../components/Seo/SEO';
 import { A } from '@solidjs/router';
 import { useAppContext } from '../context/AppContext';
 
 const DetectivesTenerife = () => {
   const { t, lang } = useAppContext();
+  
+  // Dynamic Schema with current language URLs
+  // ... (schema codes skipped in replace, just import change and usage)
+
+  // NOTE: Schema definitions are inside function, we need to preserve them.
+  // I will only replace the top imports and the return block start.
+  // Actually, replace_file_content replaces a block.
+  // I must be careful not to delete the schemas.
+  // I will target the imports first.
+
   
   // Dynamic Schema with current language URLs
   const schema = {
@@ -54,8 +64,10 @@ const DetectivesTenerife = () => {
 
   return (
     <main class="seo-page">
-      <Title>{t().detectivesPage.seoTitle}</Title>
-      <Meta name="description" content={t().detectivesPage.seoDesc} />
+      <SEO 
+        title={t().detectivesPage.seoTitle} 
+        description={t().detectivesPage.seoDesc} 
+      />
       
       {/* Schema */}
       <script type="application/ld+json">

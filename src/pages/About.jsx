@@ -1,4 +1,4 @@
-import { Title, Meta } from '@solidjs/meta';
+import SEO from '../components/Seo/SEO';
 import { useAppContext } from '../context/AppContext';
 import { translations } from '../translations/translations';
 import About from '../components/About/About';
@@ -9,8 +9,10 @@ const AboutPage = () => {
 
   return (
     <main>
-      <Title>{t().seo.about.title}</Title>
-      <Meta name="description" content={t().seo.about.description} />
+      <SEO 
+        title={t().seo.about.title}
+        description={t().seo.about.description}
+      />
       <section class="page-header">
         <div class="container">
           <h1 tabindex="0">{t().about.pageHeader.title}</h1>

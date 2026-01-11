@@ -1,4 +1,4 @@
-import { Title, Meta } from '@solidjs/meta';
+import SEO from '../components/Seo/SEO';
 import { useAppContext } from '../context/AppContext';
 import { translations } from '../translations/translations';
 
@@ -8,8 +8,7 @@ const Legal = () => {
 
   return (
     <main class="legal-page">
-      <Title>{t().metaTitle}</Title>
-      <Meta name="robots" content="noindex, follow" />
+      <SEO title={t().metaTitle} />
       
       <div class="container" style={{ padding: '120px 20px 60px' }}>
         <h1>{t().title}</h1>

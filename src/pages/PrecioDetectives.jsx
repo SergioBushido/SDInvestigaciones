@@ -1,4 +1,4 @@
-import { Title, Meta } from '@solidjs/meta';
+import SEO from '../components/Seo/SEO';
 import { A } from '@solidjs/router';
 import { useAppContext } from '../context/AppContext';
 
@@ -42,8 +42,10 @@ const PrecioDetectives = () => {
 
   return (
     <main class="seo-page">
-      <Title>{t().pricePage.seoTitle}</Title>
-      <Meta name="description" content={t().pricePage.seoDesc} />
+      <SEO 
+        title={t().pricePage.seoTitle} 
+        description={t().pricePage.seoDesc} 
+      />
 
       <script type="application/ld+json">
         {JSON.stringify(schema)}

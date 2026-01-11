@@ -1,7 +1,7 @@
 import { For } from "solid-js";
 import { useAppContext } from '../../context/AppContext';
 import { translations } from '../../translations/translations';
-import { useNavigate, useLocation } from '@solidjs/router';
+import { useNavigate, useLocation, A } from '@solidjs/router';
 import './Header.css';
 
 const Header = (props) => {
@@ -83,10 +83,38 @@ const Header = (props) => {
 
           <nav class={`nav ${props.isMenuOpen ? 'nav-open' : ''}`}>
             <ul class="nav-list">
-              <li><button onClick={() => scrollToSection('inicio')}>{t().nav.inicio}</button></li>
-              <li><button onClick={() => scrollToSection('servicios')}>{t().nav.servicios}</button></li>
-              <li><button onClick={() => scrollToSection('sobre-nosotros')}>{t().nav.sobreNosotros}</button></li>
-              <li><button onClick={() => scrollToSection('contacto')}>{t().nav.contacto}</button></li>
+              <li>
+                <A 
+                  href={`/${language()}#inicio`} 
+                  onClick={(e) => { e.preventDefault(); scrollToSection('inicio'); }}
+                >
+                  {t().nav.inicio}
+                </A>
+              </li>
+              <li>
+                <A 
+                  href={`/${language()}#servicios`} 
+                  onClick={(e) => { e.preventDefault(); scrollToSection('servicios'); }}
+                >
+                  {t().nav.servicios}
+                </A>
+              </li>
+              <li>
+                <A 
+                  href={`/${language()}#sobre-nosotros`} 
+                  onClick={(e) => { e.preventDefault(); scrollToSection('sobre-nosotros'); }}
+                >
+                  {t().nav.sobreNosotros}
+                </A>
+              </li>
+              <li>
+                <A 
+                  href={`/${language()}#contacto`} 
+                  onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }}
+                >
+                  {t().nav.contacto}
+                </A>
+              </li>
             </ul>
           </nav>
 
